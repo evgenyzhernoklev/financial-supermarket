@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     cssmin = require('gulp-minify-css'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    slim = require("gulp-slim");
 
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -19,14 +20,14 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: { //Пути откуда брать исходники
-        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+        slim: 'src/*.slim', //Синтаксис src/*.slim говорит gulp что мы хотим взять все файлы с расширением .slim
         js: 'src/js/app.js',//В стилях и скриптах нам понадобятся только main файлы
         css: 'src/css/app.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-        html: 'src/**/*.html',
+        slim: 'src/*.slim',
         js: 'src/js/**/*.js',
         css: 'src/css/**/*.*',
         img: 'src/img/**/*.*',
@@ -78,11 +79,15 @@ gulp.task('compile-js', function () {
 });
 
 gulp.task('compile-html', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
-        .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+    gulp.src(path.src.slim)
+        .pipe(slim({
+            pretty: true,
+            options: "encoding='utf-8'"
+        }))
+        .pipe(gulp.dest(path.build.html));
 });
+
+
 
 // Со шрифтами мне обычно не нужно проводить никаких манипуляций, но что бы не рушить парадигму 
 // «Работаем в src/ и собираем в build/» — я просто копирую файлы из src/fonts и вставляю в build/fonts.
@@ -109,7 +114,7 @@ gulp.task('compile-all', [
 
 
 gulp.task('watch-all', function(){
-    watch([path.watch.html], function(event, cb) {
+    watch([path.watch.slim], function(event, cb) {
         gulp.start('compile-html');
     });
     watch([path.watch.css], function(event, cb) {
