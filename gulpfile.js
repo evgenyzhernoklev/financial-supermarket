@@ -106,7 +106,7 @@ gulp.task('compile-img', function () {
 gulp.task('compile-all', [
     'compile-css',
     'compile-js',
-    'compile-html',
+    // 'compile-html',
     'compile-img',
     'compile-fonts'
 ]);
@@ -114,9 +114,9 @@ gulp.task('compile-all', [
 
 
 gulp.task('watch-all', function(){
-    watch([path.watch.slim], function(event, cb) {
-        gulp.start('compile-html');
-    });
+    // watch([path.watch.slim], function(event, cb) {
+//         gulp.start('compile-html');
+//     });
     watch([path.watch.css], function(event, cb) {
         gulp.start('compile-css');
     });
