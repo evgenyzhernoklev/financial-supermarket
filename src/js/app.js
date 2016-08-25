@@ -7,5 +7,5 @@
 /*
  * Custom
  */
-//= common.js
+//= ./common.js
 
