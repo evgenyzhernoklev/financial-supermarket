@@ -1,4 +1,5 @@
 .cols {
+    display: flex;
     overflow: hidden;
     zoom: 1;
     
@@ -14,24 +15,14 @@
 }
 
 .col_2 {
-    width: 50%;
-    float: left;
+    flex-basis: 50%;
 }
 
 .col_3 {
-    padding: 0 20px;
-    width: 33.33%;
-    float: left;
+    flex-basis: calc(100%/3);;
 }
 
 .col_4 {
-    padding-right: 20px;
-    width: 25%;
-    float: left;
+    flex-basis: 25%;
 }
 
-.col_4_2 {
-    padding-right: 20px;
-    width: 50%;
-    float: left;
-}

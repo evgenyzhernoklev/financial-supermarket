@@ -81,6 +81,7 @@ gulp.task('compile-js', function () {
 gulp.task('compile-html', function () {
     gulp.src(path.src.slim)
         .pipe(slim({
+            require: 'slim/include',
             pretty: true,
             options: "encoding='utf-8'"
         }))
