@@ -5,14 +5,187 @@ html
 		include src/partials/menu.slim
 		include src/partials/slider.slim
 		
-		.content__in
+		.content__in--full
 			.sidebar
-				.menu__sidebar
+				ul.menu__sidebar
+					li
+						a.menu__sidebar_link.is-active href="#" Лизинговые решения для вашего бизнеса
+					li
+						a.menu__sidebar_link href="#" Лизинговые программы
+					li
+						a.menu__sidebar_link href="#" Портрет Газпромбанк Лизинг
+					li
+						a.menu__sidebar_link href="#" Преимущества
+					li
+						a.menu__sidebar_link href="#" Контакты
+					li
+						a.menu__sidebar_link href="#" Клиенты
+					li
+						a.menu__sidebar_link.menu__sidebar_link--request href="#" отправить заявку
 				
-				.content
-					.tabs
-						.title
-						.tabs__links
-							a.tabs__links_link.is-active href="#"
-						.tabs__content
-						
+			.content
+				.tabs
+					.title Лизинговые решения для вашего бизнеса
+					.tabs__links
+						a.tabs__links_link href="#" Оборудование
+						a.tabs__links_link href="#" Спецтехника
+						a.tabs__links_link.is-active href="#" Ж/д транспорт
+						a.tabs__links_link href="#" Автотранспорт
+						a.tabs__links_link href="#" Морские и речные суда
+						a.tabs__links_link.tabs__links_link--more href="#" Еще
+					.tabs__content
+						.tabs__content_block
+							img.tabs__content_block_img src=""
+							.tabs__content_block_info
+							ul.tabs__content_block_list.cols
+								li.col_2 Грузовые вагоны
+								li.col_2 Нефтеналивные и бензиновые цистерны
+								li.col_2 Полувагоны
+								li.col_2 Прочий подвижной состав
+								li.col_2
+									a.tabs__content_block_list_link href="#" Подробнее о ж/д транспорте
+				
+				.news
+					.title Лизинговые программы
+					.cols.cols--news
+						.col_2
+							img.news_img src=""
+							p.news_title Государственная программа "Лизинговые проекты"
+							p.news_info Газпромбанк Лизинг – уполномоченная лизинговая компания Фонда развития промышленности (ФРП) при Минпромторге РФ по реализации государственной программы «Лизинговые проекты» (Программа №5), которая направлена на поддержку технологического ...
+							a.news_more подробнее
+						.col_2
+							img.news_img src=""
+							p.news_title Государственная программа "Автопром"
+							p.news_info Планируете обновить ваш парк коммерческого или грузового автотранспорта? Благодаря компании Газпромбанк Лизинг и государственной программе льготного лизинга «Автопром» вы можете сделать это на специальных условиях!
+							a.news_more подробнее
+						.col_2
+							img.news_img src=""
+							p.news_title Программа "Ключевой партнер"
+							p.news_info одна из ведущих компаний на рынке аренды РФ, одним из основных преимуществ которой является наличие парка современного мощного энергогенерирующего оборудования произведенного в течение прошлого года. Мы заинтересованы в долгосрочном партнерстве.
+							a.news_more подробнее
+						.col_2
+							img.news_img src=""
+							p.news_title Реализация имущества
+							p.news_info Программа «Ключевой партнер» – это уникальная возможность приобрести оборудование ведущих производителей на специальных условиях. Для предприятий-производителей участие в программе – это прекрасная возможность увеличить реализацию... 
+							a.news_more подробнее
+				
+				.points
+					.title Портрет Газпромбанк Лизинг
+					ul.cols.cols--points
+						li.col_2.col_2--pointsLeasing 
+						li.col_2 Газпромбанк Лизинг – часть Группы Газпромбанка, которая объединяет крупные компании в финансовой сфере, нефтехимической отрасли, машиностроении и медийном бизнесе
+						li.col_2 Образована в 2003 г. и за 12 лет работы накопила огромный опыт реализации сложнейших финансовых задач ведущих промышленных предприятий страны
+						li.col_2 По итогам 2015 г. входит в ТОП-10 по размеру лизингового портфеля в РФ
+						li.col_2 Занимает лидирующие позиции на рынке лизинга и осуществляет проекты в реальных секторах экономики, способствуя их обновлению, модернизации и развитию
+						li.col_2 Является членом Подкомитета по лизингу Торгово-промышленной палаты РФ и входит в Объединенную Лизинговую Ассоциацию
+						li.col_2 Лауреат Премии «Финансовая Элита России» в номинации «Гран-при: лизинговая компания года»
+						li.col_2 Финансовая надежность и высокое качество системы риск-менеджмента Газпромбанк Лизинг подтверждены рейтингами агентства «Эксперт РА»
+					.cols.cols--certificate
+						.col_3
+							img.cols--certificate_img src=""
+							p.cols--certificate_info А+ «Очень высокий уровень кредитоспособности»
+						.col_3
+							img.cols--certificate_img src=""
+							p.cols--certificate_info A.rm «Высокий уровень риск-менеджмента»
+						.col_3
+							img.cols--certificate_img src=""
+							p.cols--certificate_info Член Подкомитета по лизингу Торгово-промышленной палаты РФ, входит в ОЛА
+				
+				.advantages
+					.title Ключевые преимущества
+					.cols.cols--advantages
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src=""
+							.cols--advantages_title Надежность
+							.cols--advantages_info Высочайший уровень надежности подтвержден рейтинговым агентством «Эксперт РА»
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src=""
+							.cols--advantages_title Индивидуальный подход
+							.cols--advantages_info Максимальный учет специфики бизнеса клиента и персонализированные решения
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src=""
+							.cols--advantages_title Профессионализм
+							.cols--advantages_info Высокая компетенция сотрудников и мировые стандарты качества обслуживания
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src=""
+							.cols--advantages_title Прозрачные условия
+							.cols--advantages_info Отсутствие скрытых комиссий и детальное описание обязательств перед клиентом
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src=""
+							.cols--advantages_title Территориальная доступность
+							.cols--advantages_info Обслуживание через региональную сеть Газпромбанка (более 500 точек продаж)
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src=""
+							.cols--advantages_title.cols--advantages_title--more И другие преимущества
+							
+				
+				.clients
+					.title Клиенты
+					.cols.cols--clients
+						.col_3
+							.cols--clients_imgWrapper
+								img.cols--clients_imgWrapper_img src=""
+							.cols--clients_info П.ТрансКо
+						.col_3
+							.cols--clients_imgWrapper
+								img.cols--clients_imgWrapper_img src=""
+							.cols--clients_info Газпром-бурение
+						.col_3
+							.cols--clients_imgWrapper
+								img.cols--clients_imgWrapper_img src=""
+							.cols--clients_info Газпром-бурение
+						.col_3
+							.cols--clients_imgWrapper
+								img.cols--clients_imgWrapper_img src=""
+							.cols--clients_info ГК Газпром
+						.col_3
+							.cols--clients_imgWrapper
+								img.cols--clients_imgWrapper_img src=""
+							.cols--clients_info УВЗ-Логистик
+						.col_3
+							.cols--clients_imgWrapper
+								img.cols--clients_imgWrapper_img src=""
+							.cols--clients_info УВЗ-Логистик
+				
+				.request
+					.title
+						form.form__request.cols.cols--request action=""
+							.col_3
+								label.form__request_label
+									| Наименование организации
+									p.form__request_label_fieldWrapper
+										input.form__request_label_fieldWrapper_field type="text" placeholder="АО «АЛЬФА-БАНК»"
+							.col_3
+								label.form__request_label
+									| Имя
+									p.form__request_label_fieldWrapper
+										input.form__request_label_fieldWrapper_field type="text" placeholder="Николай"
+							.col_3
+								label.form__request_label
+									| Фамилия
+									p.form__request_label_fieldWrapper
+										input.form__request_label_fieldWrapper_field type="text" placeholder="Костенков"
+							.col_3
+								label.form__request_label
+									| Телефон
+									p.form__request_label_fieldWrapper
+										input.form__request_label_fieldWrapper_field type="text" placeholder="+7 (926) 890 67 57"
+							.col_3
+								label.form__request_label
+									| Выбор услуги
+									select.form__request_label_select
+										option.form__request_label_select_option Выберите услугу
+										option.form__request_label_select_option Торги
+										option.form__request_label_select_option Реализация
+							.col_3
+								button.form__request_submitButton отправить заявку
+				
+		include src/partials/mailing.slim
+		include src/partials/footer.slim
+
