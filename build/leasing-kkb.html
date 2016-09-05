@@ -8,10 +8,8 @@
     <script src="js/app.js"></script>
   </head>
   <body>
-    <div class="menu__top">
-      <div class="content__in">
-        <a class="menu__top_link is-active" href="#">Группа Газпромбанка:</a><a class="menu__top_link" href="#">Газпромбанк Инвест</a><a class="menu__top_link" href="#">Электронная торговая площадка  ГПБ</a><a class="menu__top_link" href="#">Газпромбанк лизинг</a><a class="menu__top_link" href="#">Газпромбанк управление активами</a><a class="menu__top_link" href="#">ГПБ факторинг</a>
-      </div>
+    <div class="menu__top content__in">
+      <a class="menu__top_link is-active" href="#">Группа Газпромбанка:</a><a class="menu__top_link" href="#">Газпромбанк Инвест</a><a class="menu__top_link" href="#">Электронная торговая площадка  ГПБ</a><a class="menu__top_link" href="#">Газпромбанк лизинг</a><a class="menu__top_link" href="#">Газпромбанк управление активами</a><a class="menu__top_link" href="#">ГПБ факторинг</a>
     </div>
     <div class="menu__bottom content__in">
       <div class="logo">
@@ -38,7 +36,71 @@
       <div class="search"></div>
       <div class="burger"></div>
     </div>
-    <div class="slider"></div>
+    <div class="slider content__in--full">
+      <div class="slide">
+        <div class="slide_overlay"></div>
+        <div class="content__in">
+          <a class="slide_link" href="#">К списку услуг</a>
+          <div class="slide_title">
+            Лизинг спецтехники
+          </div>
+          <div class="slide_subtitle">
+            Льготный займ на уплату авансового платежа.
+          </div>
+          <div class="slide_important">
+            До <span class="slide_important_numbers">250</span>млн. руб. под <span class="slide_important_numbers">5% </span>годовых.
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide_overlay"></div>
+        <div class="content__in">
+          <a class="slide_link" href="#">К списку услуг</a>
+          <div class="slide_title">
+            Нужна спецтехника?
+          </div>
+          <div class="slide_subtitle">
+            Мы купим ее для вас
+          </div>
+          <div class="slide_info">
+            Предлагаемая нашей компанией широкая номенклатура продукции помогает клиентам решать задачи любой сложности — от земляных работ до бурения грунта в самых сложных условиях.
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide_overlay"></div>
+        <div class="content__in">
+          <a class="slide_link" href="#">К списку услуг</a>
+          <div class="slide_title">
+            Хеджирование финансовых рисков
+          </div>
+          <div class="slide_subtitle">
+            Газпромбанк - ведущий оператор рынка финансовых производных
+          </div>
+          <div class="slide_info">
+            Хеджирование – снижение рыночных рисков Компании при помощи использования производных финансовых инструментов
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide_overlay"></div>
+        <div class="content__in">
+          <a class="slide_link" href="#">К списку услуг</a>
+          <div class="slide_title">
+            Cash Management
+          </div>
+          <div class="slide_subtitle">
+            Комплексные решения по управлению денежными потоками
+          </div>
+          <div class="slide_info">
+            Это комплекс услуг, предназначенных для эффективного осуществления расчетов и управления остатками на банковских счетах, позволяющих контролировать внешние и внутренние финансовые потоки холдинговой структуры, и достигать следующих целей.
+          </div>
+          <div class="slide_info">
+            Будет полезно для клиентов с разветвленной сетью филиалов, дочерних компаний и удаленных структурных подразделений.
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="content__in--full">
       <div class="sidebar">
         <ul class="menu__sidebar">
@@ -370,8 +432,8 @@
         </div>
       </div>
     </div>
-    <div class="content__in--full mailing">
-      <div class="cols cols--mailing content__in">
+    <div class="mailing content__in">
+      <div class="cols cols--mailing">
         <div class="col_2 cols--mailing_info">
           Присоединяйтесь к рассылке и будьте в курсе последних событий!
         </div>
@@ -382,17 +444,15 @@
         </div>
       </div>
     </div>
-    <footer class="footer content__in--full">
-      <div class="content__in">
-        <div class="footer__cards">
-          <img class="footer__cards_img" src="" /><img class="footer__cards_img" src="" />
-        </div>
-        <div class="menu__footer">
-          <a class="menu__footer_link" href="#">Политика безопасности</a><a class="menu__footer_link" href="#">Обработка персональных данных</a><a class="menu__footer_link" href="#">Партнерское соглашение</a><a class="menu__footer_link" href="#">Наши партнеры</a><a class="menu__footer_link" href="#">Специальные предложения</a>
-        </div>
-        <div class="footer__contacts">
-          <a class="footer__contacts_link footer__contacts_link--phone" href="tel:+78008009595">+ 7 800 800 95 95</a><a class="footer__contacts_link footer__contacts_link--mail" href="mailto:finmarket@gpb.ru">finmarket@gpb.ru</a><a class="footer__contacts_link footer__contacts_link--address" href="#">ул. Наметкина, д. 16, кор. 1</a><a class="footer__contacts_link footer__contacts_link--map" href="#">карта сайта</a>
-        </div>
+    <footer class="footer content__in">
+      <div class="footer__cards">
+        <img class="footer__cards_img" src="" /><img class="footer__cards_img" src="" />
+      </div>
+      <div class="menu__footer">
+        <a class="menu__footer_link" href="#">Политика безопасности</a><a class="menu__footer_link" href="#">Обработка персональных данных</a><a class="menu__footer_link" href="#">Партнерское соглашение</a><a class="menu__footer_link" href="#">Наши партнеры</a><a class="menu__footer_link" href="#">Специальные предложения</a>
+      </div>
+      <div class="footer__contacts">
+        <a class="footer__contacts_link footer__contacts_link--phone" href="tel:+78008009595">+ 7 800 800 95 95</a><a class="footer__contacts_link footer__contacts_link--mail" href="mailto:finmarket@gpb.ru">finmarket@gpb.ru</a><a class="footer__contacts_link footer__contacts_link--address" href="#">ул. Наметкина, д. 16, кор. 1</a><a class="footer__contacts_link footer__contacts_link--map" href="#">карта сайта</a>
       </div>
     </footer>
   </body>
