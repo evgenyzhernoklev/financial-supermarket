@@ -27,7 +27,7 @@ var path = {
         fonts: 'src/fonts/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-        slim: 'src/*.slim',
+        slim: 'src/**/*.slim',
         js: 'src/js/**/*.js',
         css: 'src/css/**/*.*',
         img: 'src/img/**/*.*',

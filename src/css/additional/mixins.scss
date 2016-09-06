@@ -1,0 +1,9 @@
+@mixin icon($name, $width, $height) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../img/icons/#{$name}.png');
+    background-size: $width $height;
+}
