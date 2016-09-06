@@ -132,6 +132,85 @@
 
 
 
+/****************************** points ******************************/
+.points {
+    
+}
+
+.points_colsWrapper {
+    box-shadow: 0 5px 20px 0 rgba(0,1,1, 0.1);
+}
+
+.cols--points {
+    counter-reset: list;
+    box-shadow: none;
+    
+    .col_2 {
+        position: relative;
+        padding: 26px 30px 29px 94px;
+        
+        &:before {
+            display: inline-block;
+            counter-increment: list;
+            content: counter(list);
+            position: absolute;
+            top: 32px;
+            left: 38px;
+            width: 33px;
+            height: 33px;
+            font: 14px/33px $r-bold;
+            text-align: center;
+            color: #327e97;
+            border: 2px solid #327e97;
+            border-radius: 50%;
+        }
+        
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+.col_2--pointsLeasing {
+    position: relative;
+    background: #327e97;
+}
+
+.col_2--pointsLeasing_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.cols--certificate {
+    background: $white;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+    
+    .col_3 {
+        padding: 45px 10px 44px;
+    }
+}
+
+.cols--certificate_img {
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 6px;
+}
+
+.cols--certificate_info {
+    font-size: 14px;
+    line-height: 22px;
+    color: #7c8b90;
+}
+
+
+
 /****************************** advantages ******************************/
 .advantages {
     
@@ -199,23 +278,6 @@
     line-height: 22px;
     color: #7c8b90;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
