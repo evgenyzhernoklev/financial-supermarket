@@ -1,0 +1,95 @@
+.footer {
+    padding-top: 29px;
+    padding-bottom: 10px;
+    background: $white;
+}
+
+.footer__cards {
+    float: right;
+    margin-top: 3px;
+    width: 80px;
+    text-align: right;
+}
+
+.footer__cards_img {
+    margin-bottom: 10px;
+}
+
+.menu__footer {
+    margin-right: 150px;
+    margin-bottom: 11px;
+    font-size: 0;
+    line-height: 0;
+    text-align: justify;
+    
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+    
+    li {
+        display: inline-block;
+    }
+}
+
+.menu__footer_link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 27px;
+    color: #8b989d;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.footer__contacts {
+    margin-right: 150px;
+}
+
+.footer__contacts_link {
+    position: relative;
+    display: inline-block;
+    margin-right: 45px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 27px;
+    color: $black;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.footer__contacts_link--phone {
+    &:before {
+        @include icon(phone_blue, 15px, 16px);
+    }
+}
+
+.footer__contacts_link--mail {
+    &:before {
+        @include icon(mail_blue, 15px, 10px);
+    }
+}
+
+.footer__contacts_link--address {
+    &:before {
+        @include icon(point_blue, 13px, 17px);
+    }
+}
+
+.footer__contacts_link--map {
+    float: right;
+}

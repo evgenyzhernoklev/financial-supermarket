@@ -1,0 +1,82 @@
+/****************************** mailing ******************************/
+.mailing {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: #7c8b90;
+}
+
+.cols--mailing {
+    
+}
+
+.cols--mailing_info {
+    line-height: 42px;
+    color: $white;
+}
+
+.form__mailing {
+    
+}
+
+.form__mailing_fieldWrapper {
+    position: relative;
+    float: right;
+    min-width: 280px;
+    margin-right: 20px;
+    padding: 0 20px;
+    display: inline-block;
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    border: 1px solid #bec5c8;
+    color: $white;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.form__mailing_fieldWrapper_info {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    color: #c8d5d9;
+}
+
+.form__mailing_fieldWrapper_field {
+    width: 100%;
+    padding-left: 52px;
+    color: $white;
+    background: transparent;
+    cursor: pointer;
+    
+    &:-moz-placeholder {
+        color: $white;
+    }
+    
+    &::-moz-placeholder {
+        color: $white;
+    }
+    
+    :-ms-input-placeholder {
+        color: $white;
+    }
+    
+    &::-webkit-input-placeholder {
+        color: $white;
+    }
+}
+
+.form__mailing_submitButton {
+    float: right;
+    display: inline-block;
+    padding: 0 50px;
+    font: 16px/42px $r-bold;
+    color: #7c8b90;
+    background: $white;
+    cursor: pointer;
+    border-radius: 21px;
+}
+
+
+
+
+
