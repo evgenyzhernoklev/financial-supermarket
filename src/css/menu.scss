@@ -130,18 +130,40 @@
 
 
 .greetings {
-    
+    margin-left: 615px;
+    margin-right: 160px;
+    padding: 19px 30px 0 0;
+    height: 100%;
+    text-align: right;
 }
 
-.greetings_avatar {
-    
+.greetings_avatarWrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.greetings_avatarWrapper_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .greetings_info {
-    
+    display: inline-block;
+    font-size: 14px;
+    line-height: 42px;
+    color: #7c8b90;
 }
 
 .greetings_info_name {
-    
+    color: $black;
 }
 
