@@ -2,11 +2,40 @@
     height: 530px;
     z-index: 1;
     overflow: hidden;
+    
+    .slick-list {
+        height: 530px!important;
+    }
+    
+    .slick-slide {
+        border: 0;
+    }
+    
+    .slick-arrow {
+        position: absolute;
+        top: 100px;
+        right: 85px;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .slick-prev {
+        @include icon(arrow_slider_up, 30px, 33px);
+    }
+    
+    .slick-next {
+        top: 175px;
+        @include icon(arrow_slider_down, 30px, 33px);
+    }
 }
 
 .slide {
     position: relative;
-    height: 100%;
+    height: 530px!important;
     
     .content__in {
         height: 100%;
