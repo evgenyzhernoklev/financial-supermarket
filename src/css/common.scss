@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: $r-regular;
+    color: $black;
 }
 
 a {
@@ -44,12 +45,20 @@ a {
 
 
 
+.content__in--mainWrapper {
+    display: flex;
+}
+
+.content {
+    padding: 0 60px 0 40px;
+    background-color: #eff1f2;
+}
+
 .title {
-    
+    margin: 50px 0 27px;
+    font: 32px/50px $r-light;
 }
 
 .subtitle {
     
 }
-
-

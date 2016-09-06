@@ -1,0 +1,46 @@
+.sidebar {
+    flex-shrink: 0;
+    width: 295px;
+    padding: 20px 28px 20px 60px;
+    background: $black;
+}
+
+.menu__sidebar {
+    
+    li {
+        &:first-child {
+            .menu__sidebar_link {
+                border: 0;
+            }
+        }
+    }
+}
+
+.menu__sidebar_link {
+    display: inline-block;
+    padding: 16px 0;
+    width: 100%;
+    font: 14px/22px $r-regular;
+    color: $white;
+    border-top: 1px solid #575b5c;
+    
+    &:hover {
+        color: $orange;
+    }
+    
+    &.is-active {
+        font-family: $r-bold;
+        color: $orange;
+    }
+}
+
+.menu__sidebar_button {
+    display: inline-block;
+    margin-top: 18px;
+    width: 100%;
+    font: 18px/52px $r-bold;
+    color: $black;
+    text-align: center;
+    background: $orange;
+    border-radius: 26px;
+}
