@@ -465,3 +465,102 @@
     cursor: pointer;
 }
 
+
+
+/****************************** procedure ******************************/
+.procedure {
+    
+}
+
+.title--download  {
+    
+}
+
+.title--download_link {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    float: right;
+    padding-left: 37px;
+    font: 14px/22px $r-regular;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include icon(pdf_red, 26px, 30px);
+    }
+    
+    span {
+        display: inline-block;
+        color: $gray;
+    }
+}
+
+.cols--procedure {
+    color: $white;
+    
+    .col_3 {
+        border-right-color: $white;
+    }
+}
+
+.cols--procedure_order {
+    padding: 12px 20px 40px;
+    text-align: center;
+    background: linear-gradient(-45deg, #ea9531 0%, #ea9531 54%, #e28b25 54%, #e28b25 100%);
+}
+
+.cols--procedureImgWrapper {
+    height: 170px;
+    line-height: 170px;
+    
+    img {
+        vertical-align: middle;
+    }
+}
+
+.cols--procedureTitle {
+    margin-bottom: 20px;
+    font: 18px/28px $r-bold;
+}
+
+.cols--procedureInfo {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
