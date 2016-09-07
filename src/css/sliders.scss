@@ -31,15 +31,53 @@
         top: 175px;
         @include icon(arrow_slider_down, 30px, 33px);
     }
+    
+    .slick-dots {
+        position: absolute;
+        left: 335px;
+        bottom: 50px;
+        font-size: 0;
+        line-height: 0;
+        
+        li {
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #9c9ea0;
+            cursor: pointer;
+            
+            &.slick-active {
+                border-color: $white;
+                cursor: default;
+                
+                button {
+                    display: inline-block;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                }
+            }
+        }
+        
+        button {
+            display: none;
+            width: 6px;
+            height: 6px;
+            background: $orange;
+        }
+    }
 }
 
 .slide {
     position: relative;
     height: 530px!important;
+    color: $white;
     
     .content__in {
-        height: 100%;
         position: relative;
+        padding-left: 335px;
     }
 }
 
@@ -64,25 +102,49 @@
 }
 
 .slide_link {
+    position: absolute;
+    top: 24px;
+    left: 60px;
+    font-size: 14px;
+    color: $white;
+    border-bottom: 1px solid $white;
     
+    &:hover {
+        border-bottom-color: transparent;
+    }
 }
 
 .slide_title {
-    
+    margin: 74px 0 30px;
+    font: 40px/50px $r-medium;
 }
 
 .slide_subtitle {
+    margin-bottom: 57px;
     
+    span {
+        display: inline;
+        padding: 2px 12px 7px;
+        font: 26px/36px $r-light;
+        background: #327e97;
+    }
 }
 
 .slide_important {
-    
+    max-width: 580px;
+    margin-top: -41px;
+    font: 26px/60px $r-light;
 }
 
-.slide_important_number {
-    
+.slide_important_numbers {
+    font: 60px/60px $r-medium;
 }
 
 .slide_info {
+    max-width: 580px;
+    margin: 13px 0;
     
+    &:first-of-type {
+        margin-top: 30px;
+    }
 }

@@ -115,6 +115,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: false,
-        vertical: true
+        vertical: true,
+        dots: true
     });
 });
