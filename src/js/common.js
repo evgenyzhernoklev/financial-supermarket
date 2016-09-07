@@ -4,26 +4,28 @@ $(document).ready(function() {
     
     
     
-    
-    
     //tabs
-    var $tabLinks = $('.tabsLinks_link'),
-        $tabsBlocks = $('.tabsContent');
+    var $tabsWrapper = $('.tabs');
     
-    $tabLinks.on('click', function(e) {
-        e.preventDefault();
+    $tabsWrapper.each(function(index, element) {
+        var $tabLinks = $(element).find('.tabsLinks_link'),
+            $tabBlocks = $(element).find('.tabsContent');
         
-        if ($(this).hasClass('is-active')) {
-            return false;
-        }
-        
-        var target = $(this).attr('href'),
-            $target = $(target);
-        
-        $tabLinks.removeClass('is-active');
-        $tabsBlocks.hide().removeClass('is-active');
-        $(this).addClass('is-active');
-        $target.fadeIn(300).addClass('is-active');
+        $tabLinks.on('click', function(e) {
+            e.preventDefault();
+            
+            if ($(this).hasClass('is-active')) {
+                return false;
+            }
+            
+            var target = $(this).attr('href'),
+                $target = $(target);
+                
+            $tabLinks.removeClass('is-active');
+            $tabBlocks.hide().removeClass('is-active');
+            $(this).addClass('is-active');
+            $target.fadeIn(300).addClass('is-active');
+        });
     });
     
     
