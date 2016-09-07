@@ -1,0 +1,36 @@
+.request
+	.title Заявка
+	form.form__request.cols.cols--shadow.cols--request action=""
+		.col_3
+			label.form__request_label
+				| Наименование организации
+				p.form__request_label_fieldWrapper
+					input.form__request_label_fieldWrapper_field type="text" placeholder="АО «АЛЬФА-БАНК»"
+		.col_3
+			label.form__request_label
+				| Имя
+				p.form__request_label_fieldWrapper
+					input.form__request_label_fieldWrapper_field type="text" placeholder="Николай"
+		.col_3
+			label.form__request_label
+				| Фамилия
+				p.form__request_label_fieldWrapper
+					input.form__request_label_fieldWrapper_field type="text" placeholder="Костенков"
+		.col_3
+			label.form__request_label
+				| Телефон
+				p.form__request_label_fieldWrapper
+					input.form__request_label_fieldWrapper_field type="text" placeholder="+7 (926) 890 67 57"
+		.col_3
+			label.form__request_label
+				| Выбор услуги
+				p.form__request_label_fieldWrapper
+					select.form__request_label_select
+						option.form__request_label_select_option Выберите услугу
+						option.form__request_label_select_option Торги
+						option.form__request_label_select_option Реализация
+		.col_3
+			label.form__request_label
+				| &nbsp;
+				p.form__request_label_fieldWrapper
+					button.form__request_submitButton отправить заявку
