@@ -4,28 +4,60 @@
 }
 
 .tabsLinks {
+    font-size: 0;
+    line-height: 0;
     
+    li {
+        display: inline-block;
+        margin-right: 25px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .tabsLinks_link {
-    
+    display: inline-block;
+    padding-bottom: 19px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7c8b90;
+    border-bottom: 4px solid transparent;
     
     &.is-active {
-        
+        font-family: $r-medium;
+        color: $black;
+        border-bottom-color: $orange;
+        cursor: default;
     }
     
     &.tabsLinks_link--more {
+        position: relative;
+        padding-right: 20px;
         
+        &:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 0;
+            @include icon(arrow_tabs_down, 9px, 6px);
+        }
     }
 }
 
 .tabsWrapper {
+    padding: 20px 20px 17px;
     background-color: $white;
     box-shadow: 0 5px 20px 0 rgba(0,1,1, 0.1);
 }
 
 .tabsContent {
+    display: none;
     
+    &.is-active {
+        display: block;
+    }
 }
 
 .tabsContent_img {
@@ -33,15 +65,50 @@
 }
 
 .tabsContent_info {
+    padding: 25px 20px 45px;
     
 }
 
 .tabsContent_list {
+    padding: 0 100px;
     
+    li {
+        position: relative;
+        margin-bottom: 28px;
+        padding-left: 22px;
+        
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            background-color: $orange;
+        }
+        
+        &:last-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
 }
 
 .tabsContent_list_link {
+    position: relative;
+    padding-right: 15px;
+    color: #327e97;
     
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        @include icon(arrow_right_blue, 6px, 9px);
+        transform: translateY(-50%);
+    }
 }
 
 
