@@ -1,0 +1,132 @@
+/****************************** contacts ******************************/
+.tabsWrapper--contacts {
+    padding: 0;
+}
+
+.tabsContentCols {
+    padding: 39px 40px 40px;
+}
+
+.tabsContentCols_col {
+    border-right: 1px solid #dfdfdf;
+    
+    &:nth-child(2n) {
+        border-right: 0;
+    }
+}
+
+.tabsContent_about {
+    padding-right: 20%;
+    font: 20px/30px $r-light;
+    color: $gray;
+}
+
+
+
+//address
+.tabsContentAddress {
+    padding-left: 40px;
+}
+
+.tabsContentAddress_phone {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    font-family: $r-bold;
+    color: $black;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include icon(phone_gray, 21px, 23px);
+    }
+}
+
+.tabsContentAddress_mail {
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding-left: 33px;
+    font-family: $r-bold;
+    color: $blue;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include icon(mail_gray, 24px, 16px);
+    }
+}
+
+.tabsContentAddress_address {
+    position: relative;
+    margin: 30px 0;
+    float: none;
+    clear: both;
+    font-family: $r-bold;
+    padding-left: 30px;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include icon(point_gray, 20px, 26px);
+    }
+}
+
+.tabsContentAddress_time {
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include icon(clock_gray, 23px, 22px);
+    }
+}
+
+.tabsContent_map {
+    
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+//address one line
+.tabsContentAddress--line {
+    padding: 33px 40px 34px;
+    
+    .tabsContentAddress_mail {
+        float: none;
+        margin-left: 10%;
+    }
+    
+    .tabsContentAddress_address {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

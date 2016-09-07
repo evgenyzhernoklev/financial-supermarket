@@ -76,26 +76,9 @@ html
 					.title Порядок заключения сделки
 				
 				include src/partials/portrait.slim
-				
-				.tabs#contacts
-					.title Контакты
-					ul.tabsLinks
-						li
-							a.tabsLinks_link.is-active href="#tab1-contacts" Москва
-						li
-							a.tabsLinks_link href="#tab2-contacts" Санкт-Петербург
-						li
-							a.tabsLinks_link href="#tab3-contacts" Краснодар
-						li
-							a.tabsLinks_link href="#tab4-contacts" Красноярск
-					.tabsWrapper
-						.tabsContent id="tab1-contacts"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-				
+				include src/partials/contacts.slim
 				include src/partials/clients.slim
 				include src/partials/request.slim
-				
-				
 				
 		include src/partials/mailing.slim
 		include src/partials/footer.slim
