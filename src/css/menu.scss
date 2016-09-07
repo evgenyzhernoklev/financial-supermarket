@@ -24,7 +24,7 @@
     color: $black;
     
     &.is-active {
-        color: #7c8b90;
+        color: $gray;
         cursor: default;
     }
 }
@@ -86,7 +86,7 @@
 
 .phone_info {
     font-size: 14px;
-    color: #7c8b90;
+    color: $gray;
 }
 
 
@@ -160,7 +160,7 @@
     display: inline-block;
     font-size: 14px;
     line-height: 42px;
-    color: #7c8b90;
+    color: $gray;
 }
 
 .greetings_info_name {
