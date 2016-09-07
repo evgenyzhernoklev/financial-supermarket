@@ -1,0 +1,101 @@
+doctype html
+html
+	include src/partials/head.slim
+	body
+		include src/partials/menu.slim
+		include src/partials/slider.slim
+		
+		.content__in--full.content__in--mainWrapper.clearfix
+			.sidebar
+				ul.menu__sidebar
+					li
+						a.menu__sidebar_link href="#advantages" Ключевые преимущества
+					li
+						a.menu__sidebar_link href="#leasing" Лизинг техники по программе «Стандарт»
+					li
+						a.menu__sidebar_link href="#procedure" Порядок заключения сделки
+					li
+						a.menu__sidebar_link href="#portrait" Портрет Газпромбанк Лизинг
+					li
+						a.menu__sidebar_link href="#contacts" Контакты
+					li
+						a.menu__sidebar_link href="#clients" Клиенты
+					li
+						a.menu__sidebar_link.menu__sidebar_link--button href="#request" отправить заявку
+				
+			.content
+				.advantages#advantages
+					.title.title--top Ключевые преимущества
+					.cols.cols--shadow.cols--advantages
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src="img/icons/advantage_1_blue.png"
+							.cols--advantages_title Надежность
+							.cols--advantages_info Высочайший уровень надежности подтвержден рейтинговым агентством «Эксперт РА»
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src="img/icons/advantage_2_blue.png"
+							.cols--advantages_title Индивидуальный подход
+							.cols--advantages_info Максимальный учет специфики бизнеса клиента и персонализированные решения
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src="img/icons/advantage_3_blue.png"
+							.cols--advantages_title Профессионализм
+							.cols--advantages_info Высокая компетенция сотрудников и мировые стандарты качества обслуживания
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src="img/icons/advantage_4_blue.png"
+							.cols--advantages_title Прозрачные условия
+							.cols--advantages_info Отсутствие скрытых комиссий и детальное описание обязательств перед клиентом
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src="img/icons/advantage_5_blue.png"
+							.cols--advantages_title Территориальная доступность
+							.cols--advantages_info Обслуживание через региональную сеть Газпромбанка (более 500 точек продаж)
+						.col_3
+							.cols--advantages_imgWrapper
+								img.cols--advantages_imgWrapper_img src="img/icons/advantage_other_blue.png"
+							.cols--advantages_title.cols--advantages_title--more И другие преимущества
+				
+				.tabs#leasing
+					.title Лизинг техники по программе «Стандарт»
+					ul.tabsLinks
+						li
+							a.tabsLinks_link.is-active href="#tab1-leasing" Спецтехника
+						li
+							a.tabsLinks_link href="#tab2-leasing" Оборудование
+						li
+							a.tabsLinks_link href="#tab3-leasing" Легковой транспорт
+						li
+							a.tabsLinks_link href="#tab4-leasing" Грузовой транспорт
+					.tabsWrapper
+						.tabsContent id="tab1-leasing"
+							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+				
+				.procedure#procedure
+					.title Порядок заключения сделки
+				
+				include src/partials/portrait.slim
+				
+				.tabs#contacts
+					.title Контакты
+					ul.tabsLinks
+						li
+							a.tabsLinks_link.is-active href="#tab1-contacts" Москва
+						li
+							a.tabsLinks_link href="#tab2-contacts" Санкт-Петербург
+						li
+							a.tabsLinks_link href="#tab3-contacts" Краснодар
+						li
+							a.tabsLinks_link href="#tab4-contacts" Красноярск
+					.tabsWrapper
+						.tabsContent id="tab1-contacts"
+							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+				
+				include src/partials/clients.slim
+				include src/partials/request.slim
+				
+				
+				
+		include src/partials/mailing.slim
+		include src/partials/footer.slim
