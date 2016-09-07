@@ -1,0 +1,84 @@
+/****************************** usage ******************************/
+.cols--newsUsage {
+    text-align: center;
+    
+    .cols--news_col {
+        padding-bottom: 55px;
+    }
+    
+    .news_imgWrapper {
+        margin-bottom: 21px;
+    }
+    
+    .news_info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .news_more {
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/****************************** advantages ******************************/
+.cols--points-adv {
+    
+    .col_2 {
+        padding-left: 105px;
+        
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.cols--points-adv_img {
+    position: absolute;
+    top: 32px;
+}
+
+.cols--points-adv_img--1 {
+    left: 37px;
+}
+
+.cols--points-adv_img--2 {
+    left: 36px;
+}
+
+.cols--points-adv_img--3 {
+    left: 32px;
+}
+
+.cols--points-adv_img--4 {
+    left: 33px;
+}
+
+.cols--points-adv_img--5 {
+    left: 31px;
+}
+
+.cols--points-adv_img--6 {
+    left: 32px;
+}
+
+.cols--points-adv_img--7 {
+    left: 22px;
+}
+
+.cols--points-adv_img--8 {
+    left: 32px;
+}
+
+
+
+/****************************** info window ******************************/
+.cashInfo {
+    
+}
+
+
+

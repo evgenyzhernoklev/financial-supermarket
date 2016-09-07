@@ -200,7 +200,7 @@
 
 .cols--news {
     
-    .col_2 {
+    .cols--news_col {
         padding: 20px 40px 62px;
     }
 }
@@ -279,7 +279,12 @@
             border: 2px solid $blue;
             border-radius: 50%;
         }
-        
+    }
+}
+
+.cols--pointsSpecial {
+    
+    .col_2 {
         &:first-child {
             &:before {
                 display: none;
@@ -531,36 +536,5 @@
     font-size: 14px;
     line-height: 26px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

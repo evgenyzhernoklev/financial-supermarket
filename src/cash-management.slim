@@ -1,0 +1,142 @@
+doctype html
+html
+	include src/partials/head.slim
+	body
+		include src/partials/menu.slim
+		include src/partials/slider.slim
+		
+		.content__in--full.content__in--mainWrapper.clearfix
+			.sidebar
+				ul.menu__sidebar
+					li
+						a.menu__sidebar_link href="#goals" Цели и эффект от внедрения
+					li
+						a.menu__sidebar_link href="#usage" Актуальность использования
+					li
+						a.menu__sidebar_link href="#cash_advantages" Преимущества
+					li
+						a.menu__sidebar_link href="#cash_info" Cash Management как отдельное окно
+					li
+						a.menu__sidebar_link href="#services" Комплекс услуг
+					li
+						a.menu__sidebar_link href="#management" Управление входящими потоками денежных средств
+					li
+						a.menu__sidebar_link href="#company" Ваша компания
+					li
+						a.menu__sidebar_link.menu__sidebar_link--button href="#request" отправить заявку
+			
+			.content
+				.points#goals
+					.title.title--top Цели и эффект от внедрения
+					.points_colsWrapper
+						ul.cols.cols--shadow.cols--points
+							li.col_2 
+								| Получение дополнительного дохода за счет оптимизации процессов внутри группы компаний
+							li.col_2 
+								| Уменьшение потребности в дополнительном финансировании
+							li.col_2 
+								| Оперативное получение информации о текущей ликвидности группы компаний
+							li.col_2 
+								| Упрощение ежедневного финансового учета внутри группы компаний
+							li.col_2 
+								| Решение проблемы кассовых<br/>разрывов
+							li.col_2 
+								| Снижение операционных<br/>расходов
+							li.col_2 
+								| Оперативное управление<br/>оборотными активами
+							li.col_2 
+								| Оптимизация процентных доходов<br/>и расходов
+				
+				.news#usage
+					.title Актуальность использования
+					.cols.cols--shadow.cols--news.cols--newsUsage
+						.col_3.cols--news_col
+							p.news_imgWrapper
+								img.news_imgWrapper_img src="img/news/news_1.jpg"
+							p.news_info Создание корпоративных казначейств
+							a.news_more подробнее
+						.col_3.cols--news_col
+							p.news_imgWrapper
+								img.news_imgWrapper_img src="img/news/news_2.jpg"
+							p.news_info Акцент на бизнес
+							a.news_more подробнее
+						.col_3.cols--news_col
+							p.news_imgWrapper
+								img.news_imgWrapper_img src="img/news/news_3.jpg"
+							p.news_info Увеличить стоимость бизнеса
+							a.news_more подробнее
+				
+				.points#cash_advantages
+					.title Преимущества
+					.points_colsWrapper
+						ul.cols.cols--shadow.cols--points.cols--points-adv
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--1 src="img/icons/advantage_cash_1.png"
+								| Индивидуальные решения для вашего бизнеса с учетом текущих управленческих и фин. потребностей
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--2 src="img/icons/advantage_cash_2.png"
+								| Различные режимы<br/>функционирования счетов
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--3 src="img/icons/advantage_cash_3.png"
+								| Простота в применении, не требуют сложного ПО, максимальная автоматизация решений
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--4 src="img/icons/advantage_cash_4.png"
+								| Высокая степень безопасности и защиты информации
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--5 src="img/icons/advantage_cash_5.png"
+								| Универсальная отработанная договорная, технологическая и информационная база
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--6 src="img/icons/advantage_cash_6.png"
+								| Опыт успешно реализованных проектов для  клиентов различных отраслевых сегментов
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--7 src="img/icons/advantage_cash_7.png"
+								| Разветвленная региональная сеть Банка (от Калининграда до Южно-Сахалинска), единые стандарты обслуживания
+							li.col_2 
+								img.cols--points-adv_img.cols--points-adv_img--8 src="img/icons/advantage_cash_8.png"
+								| Команда профессионалов в области сложных расчетных продуктов
+				
+				.cashInfo#cash_info
+					.title Cash Management как отдельное окно
+					.cols--shadow
+						
+				
+				.services#services
+					.title Комплекс услуг
+					.cols.cols--shadow
+						.col_4
+				
+				.tabs#management
+					.title Управление входящими потоками денежных средств
+					ul.tabsLinks
+						li
+							a.tabsLinks_link href="#tab1-management"
+								| Управление<br/>ликвидностью
+						li
+							a.tabsLinks_link href="#tab2-management"
+								| Продукты электронного<br/>документооборота
+						li
+							a.tabsLinks_link.is-active href="#tab3-management"
+								| Управление входящими<br/>потоками денежных средств
+						li
+							a.tabsLinks_link href="#tab4-management"
+								| Управление исходящими<br/>потоками денежных средств
+					.tabsWrapper
+						.tabsContent id="tab1-management"
+							img.tabsContent_img src="img/platform.jpg"
+							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.cols.tabsContent_list
+								li.col_2 Грузовые вагоны
+								li.col_2 Нефтеналивные и бензиновые цистерны
+								li.col_2 Пассажирские вагоны 
+								li.col_2 Полувагоны
+								li.col_2 Прочий подвижной состав
+								li.col_2
+									a.tabsContent_list_link href="#" Подробнее об оборудовании
+				
+				.company#company
+					.title Ваша компания
+				
+				include src/partials/request.slim
+				
+		include src/partials/mailing.slim
+		include src/partials/footer.slim
