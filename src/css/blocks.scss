@@ -99,7 +99,7 @@
 .tabsContent_list_link {
     position: relative;
     padding-right: 15px;
-    color: #327e97;
+    color: $blue;
     
     &:after {
         content: '';
@@ -233,7 +233,7 @@
     padding-right: 20px;
     font-size: 14px;
     line-height: 24px;
-    color: #327e97;
+    color: $blue;
     
     &:before {
         content: '';
@@ -275,8 +275,8 @@
             height: 33px;
             font: 14px/33px $r-bold;
             text-align: center;
-            color: #327e97;
-            border: 2px solid #327e97;
+            color: $blue;
+            border: 2px solid $blue;
             border-radius: 50%;
         }
         
@@ -290,7 +290,7 @@
 
 .col_2--pointsLeasing {
     position: relative;
-    background: #327e97;
+    background: $blue;
 }
 
 .col_2--pointsLeasing_logo {
@@ -464,30 +464,4 @@
     border-radius: 26px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
