@@ -6,6 +6,15 @@
 }
 
 .menu__sidebar {
+    width: 207px;
+    
+    &.is-fixed {
+        position: fixed;
+        
+        &.is-fixed-bottom {
+            position: absolute;
+        }
+    }
     
     li {
         &:first-child {
@@ -31,16 +40,16 @@
     &.is-active {
         font-family: $r-bold;
         color: $orange;
+        cursor: default;
     }
-}
-
-.menu__sidebar_button {
-    display: inline-block;
-    margin-top: 18px;
-    width: 100%;
-    font: 18px/52px $r-bold;
-    color: $black;
-    text-align: center;
-    background: $orange;
-    border-radius: 26px;
+    
+    &.menu__sidebar_link--button {
+        margin-top: 18px;
+        padding: 0;
+        font: 18px/52px $r-bold;
+        color: $black;
+        text-align: center;
+        background: $orange;
+        border-radius: 26px;
+    }
 }
