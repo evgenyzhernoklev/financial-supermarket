@@ -211,3 +211,25 @@
     }
 }
 
+
+
+/****************************** procedure ******************************/
+.cols--procedureOrder {
+    position: relative;
+    
+    &:before {
+        content: '';
+        @include icon(arrow_procedure, 53px, 64px);
+        position: absolute;
+        top: 70px;
+        right: -27px;
+        z-index: 1;
+    }
+    
+    &:last-child {
+        &:before {
+            display: none;
+        }
+    }
+}
+
