@@ -1,6 +1,110 @@
+/****************************** risks management ******************************/
+
+
+
+
+
+
+
+
+
+
+/****************************** risks types ******************************/
+.risksType {
+    
+}
+
+.col--type {
+    padding: 20px 20px 10px;
+}
+
+
+
+.col--typeHeader {
+    position: relative;
+}
+
+.col--typeHeader_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #04779c;
+    opacity: 0.5;
+}
+
+.col--typeHeader_img {
+    display: block;
+    width: 100%;
+}
+
+.col--typeHeader_info {
+    display: inline-block;
+    padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 20px/34px $r-bold;
+    color: $white;
+    background: $orange;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+
+.col--typeBlock {
+    padding: 21px 0 24px;
+    border-bottom: 1px solid #dfdfdf;
+    
+    &:last-child {
+        border: 0;
+    }
+}
+
+.col--typeBlock_title {
+    margin-bottom: 22px;
+    font: 18px/24px $r-medium;
+}
+
+.col--typeBlock_title--special {
+    color: $blue;
+}
+
+.col--typeBlock_list {
+    
+}
+
+.col--typeBlock_list_item {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background: $orange;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
 /****************************** attention ******************************/
 .attention {
-    
+    margin-top: 40px;
 }
 
 .attention_info {
