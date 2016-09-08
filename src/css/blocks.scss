@@ -247,6 +247,39 @@
 
 
 
+.news_list {
+    
+}
+
+.news_list_item {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 22px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        background: $orange;
+    }
+    
+    b {
+        font-family: $r-bold;
+        color: $blue;
+    }
+}
+
+
+
 /****************************** points ******************************/
 .points {
     

@@ -24,25 +24,21 @@
 
 
 /****************************** additional opportunities ******************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cols--additional {
+    
+    .cols--cashInfo {
+        padding: 15px 40px 10px;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    
+    .cashInfo_info {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-right: 10%;
+        font: 20px/30px $r-light;
+        color: $gray;
+    }
+}
 
 
 
