@@ -80,5 +80,49 @@
     
 }
 
+.cols--cashInfo {
+    padding: 35px 40px 30px;
+}
+
+.cashInfo_img {
+    float: left;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.cashInfo_info {
+    margin-left: 290px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+/****************************** services ******************************/
+.services {
+    
+}
+
+.col--service {
+    padding: 30px 20px 60px;
+    text-align: center;
+    
+    .news_more {
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.services_img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.services_info {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 22px;
+}
 
 
