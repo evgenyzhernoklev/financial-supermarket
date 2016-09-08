@@ -1,11 +1,75 @@
 /****************************** risks management ******************************/
+.risksManagement {
+    
+}
+
+.cols--riskManagement {
+    padding: 35px 40px 40px;
+    
+    .col--riskManagement {
+        border: 0;
+    }
+}
 
 
+.col--riskManagementImg {
+    position: relative;
+    padding-right: 60px;
+    padding-bottom: 60px;
+}
 
+.col--riskManagement_info {
+    margin-bottom: 20px;
+    font: 24px/34px $r-light;
+    color: $gray;
+}
 
+.col--riskManagement_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
+.col--riskManagement_title {
+    margin-bottom: 10px;
+    font: 18px/34px $r-medium;
+}
 
+.col--riskManagement_list {
+    counter-reset: list;
+}
 
+.col--riskManagement_list_item {
+    position: relative;
+    padding: 21px 20px 20px 60px;
+    border-bottom: 1px solid #dfdfdf;
+    
+    &:last-child {
+        padding-bottom: 0;
+        border: 0;
+    }
+    
+    &:before {
+        display: inline-block;
+        counter-increment: list;
+        content: counter(list);
+        position: absolute;
+        top: 23px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        font: 22px/40px $r-bold;
+        text-align: center;
+        color: $blue;
+        border: 2px solid $blue;
+        border-radius: 50%;
+    }
+    
+    b {
+        font-family: $r-medium;
+        color: $blue;
+    }
+}
 
 
 
