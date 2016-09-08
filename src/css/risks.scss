@@ -373,6 +373,9 @@
 /****************************** contacts ******************************/
 .contacts {
     
+    .cols {
+        flex-wrap: nowrap;
+    }
 }
 
 .col--contacts {
