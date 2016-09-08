@@ -1,0 +1,102 @@
+doctype html
+html
+	include src/partials/head.slim
+	body
+		include src/partials/menu.slim
+		include src/partials/slider.slim
+		
+		.content__in--full.content__in--mainWrapper.clearfix
+			.sidebar
+				ul.menu__sidebar
+					li
+						a.menu__sidebar_link href="#risksManagement" Управление рыночными рисками
+					li
+						a.menu__sidebar_link href="#risksType" Виды рыночного риска и инструменты хеджирования
+					li
+						a.menu__sidebar_link href="#additional" Дополнительные возможности
+					li
+						a.menu__sidebar_link href="#stages" Этапы работы комплексного подхода
+					li
+						a.menu__sidebar_link href="#keyAdvantages" Ключевые преимущества
+					li
+						a.menu__sidebar_link href="#how" Как это работает?
+					li
+						a.menu__sidebar_link href="#contacts" Контакты
+					li
+						a.menu__sidebar_link.menu__sidebar_link--button href="#request" отправить заявку
+			
+			.content
+				.risksManagement#risksManagement
+					.title.title--top Управление рыночными рисками
+				
+				
+				
+				
+				
+				.risksType#risksType
+					.title Виды рыночного риска и инструменты хеджирования
+				
+				
+				
+				
+				
+				.additional#additional
+					.title Дополнительные возможности
+					
+				
+				
+				
+				
+				.stages#stages
+					.title Этапы работы комплексного подхода
+					
+				
+				
+				
+				
+				.keyAdvantages#keyAdvantages
+					.title Ключевые преимущества
+					
+				
+				
+				
+				
+				
+				.how#how
+					.title Как это работает?
+					.cols.cols--shadow.cols--procedure.cols--procedureHow
+						.col_3.cols--procedure_order
+							p.cols--procedureImgWrapper
+								img src="img/icons/procedure_4.png"
+							p.cols--procedureInfo
+								| Связаться с обслуживающим подразделением, сообщить о своем намерении заключить ту или иную сделку и запросить котировки по данному инструменту
+						.col_3.cols--procedure_order
+							p.cols--procedureImgWrapper
+								img src="img/icons/procedure_5.png"
+							p.cols--procedureInfo
+								| На основе полученной от сотрудников информации принять решение о целесообразности заключения соответствующей сделки
+						.col_3.cols--procedure_order
+							p.cols--procedureImgWrapper
+								img src="img/icons/procedure_6.png"
+							p.cols--procedureInfo
+								| Заключить сделку при согласии с условиями
+				
+				
+				
+				
+				
+				.contacts#contacts
+					.title Контакты
+					.cols.cols--shadow
+						.col_3 
+						.col_3
+						.col_3
+				
+				
+				
+				
+				
+				include src/partials/request.slim
+				
+		include src/partials/mailing.slim
+		include src/partials/footer.slim
