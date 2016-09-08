@@ -5,6 +5,20 @@ $(document).ready(function() {
     
     
     
+    //scroll to block
+    function scrollToBlock(e) {
+        e.preventDefault();
+        
+        var targetBlock = $(this).attr('href'),
+            scrollTarget = $(targetBlock).offset().top;
+        
+        $("html, body").stop().animate({scrollTop: scrollTarget}, '700', 'linear');
+    }
+    
+    $('.scroll-link').on('click', scrollToBlock);
+    
+    
+    
     //sidebar menu position
     var $sidebarMenu = $('.menu__sidebar');
         
