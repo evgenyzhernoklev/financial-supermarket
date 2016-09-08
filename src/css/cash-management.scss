@@ -126,3 +126,107 @@
 }
 
 
+
+/****************************** management ******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************** your company ******************************/
+.company {
+    
+}
+
+.cols--company {
+    background-color: transparent;
+    
+    .col--company {
+        border: 0;
+    }
+}
+
+
+
+.col--companyList {
+    padding: 0 40px;
+    color: $white;
+    background: $black url('../img/cash_company_bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.col--company_list {
+    
+}
+
+.col--company_list_item {
+    position: relative;
+    padding: 31px 20px 34px 20px;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    
+    &:last-child {
+        border: 0;
+    }
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 42px;
+        left: 0;
+        background: $orange;
+    }
+}
+
+
+
+.col--companyInfo {
+    position: relative;
+    padding: 73px 40px 40px;
+    background: linear-gradient(45deg,#e28b25 0,#e28b25 75%,#ea9531 75%,#ea9531 100%);
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 33px solid transparent;	
+        border-bottom: 33px solid #d67c12; 
+        border-left: 33px solid #d67c12;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 33px solid transparent;	
+        border-top: 33px solid #eff1f2; 
+        border-right: 33px solid #eff1f2;
+    }
+}
+
+.col--companyInfo_img {
+    margin-bottom: 50px;
+}
+
+.col--companyInfo_text {
+    font: 30px/40px $r-light;
+    color: $white;
+}
+
