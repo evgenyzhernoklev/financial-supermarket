@@ -1,0 +1,101 @@
+
+
+
+
+
+
+
+
+
+
+/****************************** how doest it work ******************************/
+.how {
+    
+}
+
+.cols--procedureHow {
+    
+    .cols--procedure_order {
+        padding: 2px 30px 42px;
+        text-align: left;
+    }
+    
+    .cols--procedureImgWrapper {
+        margin-bottom: 10px;
+        height: 150px;
+        line-height: 150px;
+    }
+    
+    .cols--procedureInfo {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+
+
+/****************************** contacts ******************************/
+.contacts {
+    
+}
+
+.col--contacts {
+    padding: 30px 20px 34px;
+    text-align: center;
+}
+
+.contacts_avatar {
+    margin-bottom: 18px;
+    border-radius: 50%;
+}
+
+.contacts_name {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 19px;
+    font: 18px/24px $r-bold;
+    text-transform: uppercase;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 26px;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background: #dfdfdf;
+        transform: translateX(-50%);
+    }
+}
+
+.contacts_position {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.contacts_place {
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $gray;
+}
+
+.contacts_phone {
+    margin-bottom: 10px;
+}
+
+.contacts_phone_link {
+    font: 16px/22px $r-bold;
+    color: $black;
+}
+
+.contacts_email {
+    
+}
+
+.contacts_email_link {
+    font: 16px/22px $r-bold;
+    color: $blue;
+}
+
