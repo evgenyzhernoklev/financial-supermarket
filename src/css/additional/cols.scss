@@ -69,7 +69,15 @@
 }
 
 .col_3 {
-    flex-basis: calc(100%/3);;
+    flex-basis: calc(100%/3);
+}
+
+.col_3_1 {
+    flex-basis: calc(100%/3);
+}
+
+.col_3_2 {
+    flex-basis: calc(100%/(3/2));
 }
 
 .col_4 {

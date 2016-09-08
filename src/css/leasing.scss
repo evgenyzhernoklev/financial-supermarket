@@ -1,3 +1,95 @@
+/****************************** technics leasing ******************************/
+.tabsWrapper--leasing {
+    padding: 0;
+}
+
+.cols--leasing {
+    flex-wrap: nowrap;
+}
+
+.col--leasing {
+    position: relative;
+}
+
+.tabsContentLeasingBg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tabsContentLeasingBg--technics {
+    background-image: url('../img/leasing_bg1.jpg');
+}
+
+
+
+.tabsContentLeasing {
+     padding: 37px 0 54px 40px;
+}
+
+.tabsContentLeasing_title {
+    margin-bottom: 34px;
+    font: 24px/34px $r-medium;
+}
+
+
+
+.cols--tabsContentLeasing {
+    flex-wrap: nowrap;
+    margin-bottom: 36px;
+    white-space: nowrap;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.col--tabsContentLeasing {
+    
+}
+
+.col--tabsContentLeasing--padding {
+    padding-right: 40px;
+}
+
+.cols--tabsContentLeasing_text {
+    margin-bottom: 3px;
+    font-size: 30px;
+    line-height: 50px;
+    color: $gray;
+}
+
+.cols--tabsContentLeasing_text_important {
+    font-size: 50px;
+    color: $orange;
+}
+
+.cols--tabsContentLeasing_info {
+    font-size: 14px;
+    line-height: 22px;
+    color: $gray;
+}
+
+.cols--tabsContentLeasing_button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 40px;
+    padding: 0 10px;
+    font: 18px/52px $r-bold;
+    text-align: center;
+    color: $white;
+    background: $blue;
+    border-radius: 26px;
+}
+
+
+
 /****************************** contacts ******************************/
 .tabsWrapper--contacts {
     padding: 0;
