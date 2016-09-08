@@ -1,3 +1,29 @@
+/****************************** attention ******************************/
+.attention {
+    
+}
+
+.attention_info {
+    position: relative;
+    padding: 20px 10px 24px 115px;
+    font-size: 18px;
+    line-height: 26px;
+    color: $white;
+    background: $orange url('../img/risks_info_bg.png') no-repeat right center;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        @include icon(attention_white, 44px, 39px);
+        transform: translateY(-50%);
+    }
+}
+
+
+
+/****************************** additional opportunities ******************************/
 
 
 
@@ -5,6 +31,90 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************** stages ******************************/
+.stages {
+    
+}
+
+
+
+
+
+
+
+
+
+
+/****************************** key advantages ******************************/
+.keyAdvantages {
+    
+}
+
+.cols--key {
+    flex-wrap: nowrap;
+}
+
+.col--key {
+    padding: 0 20px 32px;
+}
+
+.col--key_imgWrapper {
+    float: left;
+    width: 90px;
+    height: 150px;
+    margin-bottom: 10px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.col--key_imgWrapper_img {
+    vertical-align: middle;
+}
+
+.col--key_title {
+    margin-top: 41px;
+    margin-left: 110px;
+    font: 18px/24px $r-medium;
+}
+
+.col--key_list {
+    float: none;
+    clear: both;
+}
+
+.col--key_list_item {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background: $orange;
+    }
+}
 
 
 
