@@ -312,44 +312,139 @@
           </div>
           <ul class="tabsLinks">
             <li>
-              <a class="tabsLinks_link" href="#tab1-management">Управление<br/>ликвидностью</a>
+              <a class="tabsLinks_link is-active" href="#tab1-management">Управление<br/>ликвидностью</a>
             </li>
             <li>
               <a class="tabsLinks_link" href="#tab2-management">Продукты электронного<br/>документооборота</a>
             </li>
             <li>
-              <a class="tabsLinks_link is-active" href="#tab3-management">Управление входящими<br/>потоками денежных средств</a>
+              <a class="tabsLinks_link" href="#tab3-management">Управление входящими<br/>потоками денежных средств</a>
             </li>
             <li>
               <a class="tabsLinks_link" href="#tab4-management">Управление исходящими<br/>потоками денежных средств</a>
             </li>
           </ul>
           <div class="tabsWrapper">
-            <div class="tabsContent" id="tab1-management">
-              <img class="tabsContent_img" src="img/platform.jpg" />
-              <div class="tabsContent_info">
-                Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+            <div class="tabsContent is-active" id="tab1-management">
+              <div class="tabs--sub">
+                <ul class="tabsLinks--sub">
+                  <li>
+                    <a class="tabsLinks_link--sub is-active" href="#tab1-management-1">Идентификация входящих платежей</a>
+                  </li>
+                  <li>
+                    <a class="tabsLinks_link--sub" href="#tab1-management-2">Идентификация входящих платежей</a>
+                  </li>
+                </ul>
+                <div class="title">
+                  Идентификация входящих платежей с использованием уникального идентификатора платежа (УИП)
+                </div>
+                <div class="tabsWrapper--sub">
+                  <div class="tabsContent--sub is-active" id="tab1-management-1">
+                    <div class="cols cols--manage">
+                      <div class="col_3 col--manage col--manage1">
+                        <div class="col--manage_text">
+                          Оформление Плательщиком платежного поручения с использованием УИП
+                        </div>
+                        <div class="col--manage_info">
+                          УИП - уникальный идентификатор платежа
+                        </div>
+                        <div class="col--manage_next">
+                          Распоряжение
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage2">
+                        <div class="col--manage_text">
+                          Контроль УИП* посредством проверки ключевого разряда в случае перевода и осуществление перевода при положительном результате проверки
+                        </div>
+                        <div class="col--manage_next">
+                          Перевод
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage3">
+                        <img class="col--manage_img" src="img/logos/gasprombank_blue.png" />
+                        <div class="col--manage_text">
+                          Зачисление денежных средств на счет получателя
+                        </div>
+                        <div class="col--manage_info">
+                          40822
+                        </div>
+                        <div class="col--manage_next">
+                          Отчет
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage4">
+                        <img class="col--manage_img" src="img/manage-step6.png" />
+                      </div>
+                      <div class="col_3 col--manage col--manage5">
+                        <img class="col--manage_img" src="img/manage-step5.png" />
+                        <div class="col--manage_text">
+                          Счет получателя. Специальный банковский счет для идентификации платежа.
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage6">
+                        <div class="col--manage_title">
+                          Клиент
+                        </div>
+                        <div class="col--manage_text">
+                          Направление получателю – клиенту Банка ГПБ (АО) ежедневного и промежуточного отчета по входящим платежам с использованием УИП
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabsContent--sub" id="tab1-management-2">
+                    <div class="cols cols--manage">
+                      <div class="col_3 col--manage col--manage1">
+                        <div class="col--manage_text">
+                          Оформление Плательщиком платежного поручения с использованием УИП
+                        </div>
+                        <div class="col--manage_info">
+                          УИП - уникальный идентификатор платежа
+                        </div>
+                        <div class="col--manage_next">
+                          Распоряжение
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage2">
+                        <div class="col--manage_text">
+                          Контроль УИП* посредством проверки ключевого разряда в случае перевода и осуществление перевода при положительном результате проверки
+                        </div>
+                        <div class="col--manage_next">
+                          Перевод
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage3">
+                        <img class="col--manage_img" src="img/logos/gasprombank_blue.png" />
+                        <div class="col--manage_text">
+                          Зачисление денежных средств на счет получателя
+                        </div>
+                        <div class="col--manage_info">
+                          40822
+                        </div>
+                        <div class="col--manage_next">
+                          Отчет
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage4">
+                        <img class="col--manage_img" src="img/manage-step6.png" />
+                      </div>
+                      <div class="col_3 col--manage col--manage5">
+                        <img class="col--manage_img" src="img/manage-step5.png" />
+                        <div class="col--manage_text">
+                          Счет получателя. Специальный банковский счет для идентификации платежа.
+                        </div>
+                      </div>
+                      <div class="col_3 col--manage col--manage6">
+                        <div class="col--manage_title">
+                          Клиент
+                        </div>
+                        <div class="col--manage_text">
+                          Направление получателю – клиенту Банка ГПБ (АО) ежедневного и промежуточного отчета по входящим платежам с использованием УИП
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <ul class="cols tabsContent_list">
-                <li class="col_2">
-                  Грузовые вагоны
-                </li>
-                <li class="col_2">
-                  Нефтеналивные и бензиновые цистерны
-                </li>
-                <li class="col_2">
-                  Пассажирские вагоны 
-                </li>
-                <li class="col_2">
-                  Полувагоны
-                </li>
-                <li class="col_2">
-                  Прочий подвижной состав
-                </li>
-                <li class="col_2">
-                  <a class="tabsContent_list_link" href="#">Подробнее об оборудовании</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
