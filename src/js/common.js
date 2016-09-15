@@ -98,28 +98,33 @@ $(document).ready(function() {
     
     
     //tabs
-    var $tabsWrapper = $('.tabs');
+    function TabsSwitching(container, links, content) {
+        var $tabsWrapper = $(container);
     
-    $tabsWrapper.each(function(index, element) {
-        var $tabLinks = $(element).find('.tabsLinks_link'),
-            $tabBlocks = $(element).find('.tabsContent');
+        $tabsWrapper.each(function(index, element) {
+            var $tabLinks = $(element).find(links),
+                $tabBlocks = $(element).find(content);
         
-        $tabLinks.on('click', function(e) {
-            e.preventDefault();
+            $tabLinks.on('click', function(e) {
+                e.preventDefault();
             
-            if ($(this).hasClass('is-active')) {
-                return false;
-            }
+                if ($(this).hasClass('is-active')) {
+                    return false;
+                }
             
-            var target = $(this).attr('href'),
-                $target = $(target);
+                var target = $(this).attr('href'),
+                    $target = $(target);
                 
-            $tabLinks.removeClass('is-active');
-            $tabBlocks.hide().removeClass('is-active');
-            $(this).addClass('is-active');
-            $target.fadeIn(300).addClass('is-active');
+                $tabLinks.removeClass('is-active');
+                $tabBlocks.hide().removeClass('is-active');
+                $(this).addClass('is-active');
+                $target.fadeIn(300).addClass('is-active');
+            });
         });
-    });
+    }
+    
+    TabsSwitching('.tabs', '.tabsLinks_link', '.tabsContent');
+    TabsSwitching('.tabs--sub', '.tabsLinks_link--sub', '.tabsContent--sub');
     
     
     
