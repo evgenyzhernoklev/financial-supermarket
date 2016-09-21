@@ -146,4 +146,9 @@ $(document).ready(function() {
         vertical: true,
         dots: true
     });
+
+
+
+    //custom select
+    $('.is-select').select2();
 });
