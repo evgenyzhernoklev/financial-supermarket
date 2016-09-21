@@ -1,17 +1,17 @@
 /****************************** tabs ******************************/
 .tabs {
-    
+
 }
 
 .tabsLinks {
     font-size: 0;
     line-height: 0;
     white-space: nowrap;
-    
+
     li {
         display: inline-block;
         margin-right: 25px;
-        
+
         &:last-child {
             margin-right: 0;
         }
@@ -25,18 +25,18 @@
     line-height: 24px;
     color: $gray;
     border-bottom: 4px solid transparent;
-    
+
     &.is-active {
         font-family: $r-medium;
         color: $black;
         border-bottom-color: $orange;
         cursor: default;
     }
-    
+
     &.tabsLinks_link--more {
         position: relative;
         padding-right: 20px;
-        
+
         &:before {
             content: '';
             position: absolute;
@@ -55,7 +55,7 @@
 
 .tabsContent {
     display: none;
-    
+
     &.is-active {
         display: block;
     }
@@ -67,17 +67,17 @@
 
 .tabsContent_info {
     padding: 25px 20px 45px;
-    
+
 }
 
 .tabsContent_list {
     padding: 0 100px;
-    
+
     li {
         position: relative;
         margin-bottom: 28px;
         padding-left: 22px;
-        
+
         &:before {
             content: '';
             display: inline-block;
@@ -88,7 +88,7 @@
             left: 0;
             background-color: $orange;
         }
-        
+
         &:last-child {
             &:before {
                 display: none;
@@ -101,7 +101,7 @@
     position: relative;
     padding-right: 15px;
     color: $blue;
-    
+
     &:after {
         content: '';
         position: absolute;
@@ -122,7 +122,7 @@
 }
 
 .cols--mailing {
-    
+
 }
 
 .cols--mailing_info {
@@ -131,7 +131,7 @@
 }
 
 .form__mailing {
-    
+
 }
 
 .form__mailing_fieldWrapper {
@@ -163,19 +163,19 @@
     color: $white;
     background: transparent;
     cursor: pointer;
-    
+
     &:-moz-placeholder {
         color: $white;
     }
-    
+
     &::-moz-placeholder {
         color: $white;
     }
-    
+
     :-ms-input-placeholder {
         color: $white;
     }
-    
+
     &::-webkit-input-placeholder {
         color: $white;
     }
@@ -196,13 +196,25 @@
 
 /****************************** news ******************************/
 .news {
-    
+
 }
 
 .cols--news {
-    
+
     .cols--news_col {
         padding: 20px 40px 62px;
+    }
+}
+
+.cols--news_col {
+    &.is-link {
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color $transition-normal;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
     }
 }
 
@@ -235,7 +247,7 @@
     font-size: 14px;
     line-height: 24px;
     color: $blue;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -249,7 +261,7 @@
 
 
 .news_list {
-    
+
 }
 
 .news_list_item {
@@ -257,11 +269,11 @@
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 22px;
-    
+
     &:last-child {
         margin-bottom: 0;
     }
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -272,7 +284,7 @@
         left: -20px;
         background: $orange;
     }
-    
+
     b {
         font-family: $r-bold;
         color: $blue;
@@ -283,7 +295,7 @@
 
 /****************************** points ******************************/
 .points {
-    
+
 }
 
 .points_colsWrapper {
@@ -293,11 +305,11 @@
 .cols--points {
     counter-reset: list;
     box-shadow: none;
-    
+
     .col_2 {
         position: relative;
         padding: 26px 30px 29px 94px;
-        
+
         &:before {
             display: inline-block;
             counter-increment: list;
@@ -317,7 +329,7 @@
 }
 
 .cols--pointsSpecial {
-    
+
     .col_2 {
         &:first-child {
             &:before {
@@ -345,7 +357,7 @@
     background: $white;
     text-align: center;
     border-top: 1px solid #dfdfdf;
-    
+
     .col_3 {
         padding: 45px 10px 44px;
     }
@@ -367,12 +379,12 @@
 
 /****************************** advantages ******************************/
 .advantages {
-    
+
 }
 
 .cols--advantages {
     text-align: center;
-    
+
     .col_3 {
         padding: 20px 20px 44px;
     }
@@ -406,12 +418,12 @@
 
 /****************************** clients ******************************/
 .clients {
-    
+
 }
 
 .cols--clients {
     text-align: center;
-    
+
     .col_3 {
         padding: 0 20px 44px;
     }
@@ -437,17 +449,17 @@
 
 /****************************** request form ******************************/
 .request {
-    
+
 }
 
 .form__request {
     padding: 25px 40px 10px;
-    
+
     &.cols--request {
         .col_3 {
             padding-right: 36px;
             border: 0;
-            
+
             &:nth-child(3n) {
                 padding-right: 0;
             }
@@ -476,7 +488,7 @@
 
 .form__request_label_select {
     appearance: none;
-    
+
     position: relative;
     display: block;
     width: 100%;
@@ -490,7 +502,7 @@
 }
 
 .form__request_label_select_option {
-    
+
 }
 
 .form__request_submitButton {
@@ -508,11 +520,11 @@
 
 /****************************** procedure ******************************/
 .procedure {
-    
+
 }
 
 .title--download  {
-    
+
 }
 
 .title--download_link {
@@ -522,7 +534,7 @@
     float: right;
     padding-left: 37px;
     font: 14px/22px $r-regular;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -531,7 +543,7 @@
         transform: translateY(-50%);
         @include icon(pdf_red, 26px, 30px);
     }
-    
+
     span {
         display: inline-block;
         color: $gray;
@@ -540,7 +552,7 @@
 
 .cols--procedure {
     color: $white;
-    
+
     .col_3 {
         border-right-color: $white;
     }
@@ -555,7 +567,7 @@
 .cols--procedureImgWrapper {
     height: 170px;
     line-height: 170px;
-    
+
     img {
         vertical-align: middle;
     }
@@ -570,5 +582,3 @@
     font-size: 14px;
     line-height: 26px;
 }
-
-
