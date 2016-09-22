@@ -125,16 +125,16 @@
 
 }
 
-.cols--mailing_info {
+.col--mailing {
     line-height: 42px;
     color: $white;
 }
 
-.form__mailing {
+.formMailing {
 
 }
 
-.form__mailing_fieldWrapper {
+.formMailing_label {
     position: relative;
     float: right;
     min-width: 280px;
@@ -150,14 +150,14 @@
     cursor: pointer;
 }
 
-.form__mailing_fieldWrapper_info {
+.formMailingLabel_info {
     display: inline-block;
     position: absolute;
     left: 20px;
     color: #c8d5d9;
 }
 
-.form__mailing_fieldWrapper_field {
+.formMailingLabel_field {
     width: 100%;
     padding-left: 52px;
     color: $white;
@@ -181,7 +181,7 @@
     }
 }
 
-.form__mailing_submitButton {
+.formMailing_submitButton {
     float: right;
     display: inline-block;
     padding: 0 50px;
