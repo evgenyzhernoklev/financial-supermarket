@@ -155,14 +155,6 @@ $(document).ready(function() {
 
 
     //custom select
-    // $('.is-select').select2({
-    //     placeholder: "Select a state"
-    // });
-
-    // $(".js-example-placeholder-multiple").select2({
-    //     placeholder: "Select a state"
-    // });
-
     $('.select-custom-js').select2({
         minimumResultsForSearch: 'Infinity'
     });
