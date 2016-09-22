@@ -9,5 +9,5 @@
 /*
  * Custom
  */
-//= ./vendor/select2.full.min.js
+//= ./vendor/select2.full.js
 //= ./common.js

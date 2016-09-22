@@ -452,7 +452,7 @@
 
 }
 
-.form__request {
+.formRequest {
     padding: 25px 40px 10px;
 
     &.cols--request {
@@ -467,17 +467,17 @@
     }
 }
 
-.form__request_label {
+.formRequest_label {
     font-size: 14px;
     color: $gray;
     cursor: pointer;
 }
 
-.form__request_label_fieldWrapper {
+.formRequestField {
     margin: 7px 0 30px;
 }
 
-.form__request_label_fieldWrapper_field {
+.formRequestField_input {
     width: 100%;
     height: 52px;
     padding: 0 20px;
@@ -486,9 +486,8 @@
     border-radius: 26px;
 }
 
-.form__request_label_select {
+.formRequestField_select {
     appearance: none;
-
     position: relative;
     display: block;
     width: 100%;
@@ -501,11 +500,11 @@
     cursor: pointer;
 }
 
-.form__request_label_select_option {
+.formRequestSelect_option {
 
 }
 
-.form__request_submitButton {
+.formRequest_submitButton {
     display: inline-block;
     width: 100%;
     height: 52px;
@@ -514,6 +513,49 @@
     background-color: $orange;
     border-radius: 26px;
     cursor: pointer;
+}
+
+
+
+// select
+.select2-container--default {
+
+    .select2-selection--single {
+        width: 100%;
+        height: 52px;
+        padding: 0 20px;
+        color: $black;
+        border: 1px solid #dddddd;
+        border-radius: 26px;
+
+        .select2-selection__rendered {
+            padding-left: 0;
+            line-height: 50px;
+        }
+
+        .select2-selection__arrow {
+            top: 23px;
+            right: 20px;
+            @include icon(arrow_select_down, 9px, 5px);
+
+            b {
+                display: none;
+            }
+        }
+    }
+}
+
+.select2-dropdown {
+    border-color: #dddddd;
+}
+
+.select2-results__option {
+    padding: 9px 20px 10px;
+    font-size: 14px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $orange;
 }
 
 

@@ -1,36 +1,36 @@
 .request#request
 	.title Заявка
-	form.form__request.cols.cols--shadow.cols--request action=""
+	form.formRequest.cols.cols--shadow.cols--request action=""
 		.col_3
-			label.form__request_label
+			label.formRequest_label.formRequestLabel
 				| Наименование организации
-				p.form__request_label_fieldWrapper
-					input.form__request_label_fieldWrapper_field type="text" placeholder="АО «АЛЬФА-БАНК»"
+				p.formRequestLabel_field.formRequestField
+					input.formRequestField_input type="text" placeholder="АО «АЛЬФА-БАНК»"
 		.col_3
-			label.form__request_label
+			label.formRequest_label.formRequestLabel
 				| Имя
-				p.form__request_label_fieldWrapper
-					input.form__request_label_fieldWrapper_field type="text" placeholder="Николай"
+				p.formRequestLabel_field.formRequestField
+					input.formRequestField_input type="text" placeholder="Николай"
 		.col_3
-			label.form__request_label
+			label.formRequest_label.formRequestLabel
 				| Фамилия
-				p.form__request_label_fieldWrapper
-					input.form__request_label_fieldWrapper_field type="text" placeholder="Костенков"
+				p.formRequestLabel_field.formRequestField
+					input.formRequestField_input type="text" placeholder="Костенков"
 		.col_3
-			label.form__request_label
+			label.formRequest_label.formRequestLabel
 				| Телефон
-				p.form__request_label_fieldWrapper
-					input.form__request_label_fieldWrapper_field type="text" placeholder="+7 (926) 890 67 57"
+				p.formRequestLabel_field.formRequestField
+					input.formRequestField_input type="text" placeholder="+7 (926) 890 67 57"
 		.col_3
-			label.form__request_label
+			label.formRequest_label.formRequestLabel
 				| Выбор услуги
-				p.form__request_label_fieldWrapper
-					select.form__request_label_select.is-select
-						option.form__request_label_select_option Выберите услугу
-						option.form__request_label_select_option Торги
-						option.form__request_label_select_option Реализация
+				p.formRequestLabel_field.formRequestField
+					select.formRequestField_select.formRequestSelect.select-custom-js data-placeholder="Выберите регион"
+						option.formRequestSelect_option label="Выберите регион"
+						option.formRequestSelect_option value="Торги" Торги
+						option.formRequestSelect_option value="Реализация" Реализация
 		.col_3
-			label.form__request_label
+			label.formRequest_label.formRequestLabel
 				| &nbsp;
-				p.form__request_label_fieldWrapper
-					button.form__request_submitButton отправить заявку
+				p.formRequestLabel_field.formRequestField
+					button.formRequest_submitButton отправить заявку
