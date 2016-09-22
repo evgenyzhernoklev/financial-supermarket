@@ -13,6 +13,7 @@
         margin-right: 25px;
 
         &:last-child {
+            position: relative;
             margin-right: 0;
         }
     }
@@ -112,6 +113,37 @@
     }
 }
 
+
+// hidden tabs
+.tabsLinks--hidden {
+    display: none;
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: -20px;
+    background: $white;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px 0 rgba(0,1,1,.1);
+
+    li {
+        display: block;
+        margin: 0 0 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.tabsLinks_link--hidden {
+    padding: 0;
+    border: 0;
+
+    &:hover {
+        color: $black;
+    }
+}
 
 
 /****************************** mailing ******************************/

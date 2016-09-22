@@ -121,6 +121,11 @@ $(document).ready(function() {
                     return false;
                 }
 
+                if ($(this).hasClass('tabsLinks_link--more')) {
+                    $tabsWrapper.find('.tabsLinks--hidden').fadeToggle(300);
+                    return false;
+                }
+
                 var target = $(this).attr('href'),
                     $target = $(target);
 
