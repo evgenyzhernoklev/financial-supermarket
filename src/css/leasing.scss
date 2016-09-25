@@ -7,11 +7,11 @@
     flex-wrap: nowrap;
 }
 
-.col--leasing {
+.colsCol--leasing {
     position: relative;
 }
 
-.tabsContentLeasingBg {
+.colsCol__leasingBg {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -22,60 +22,60 @@
     background-size: cover;
 }
 
-.tabsContentLeasingBg--technics {
+.colsCol__leasingBg--technics {
     background-image: url('../img/leasing_bg1.jpg');
 }
 
 
 
-.tabsContentLeasing {
+.tabsLeasing {
      padding: 37px 0 54px 40px;
 }
 
-.tabsContentLeasing_title {
+.tabsLeasing__title {
     margin-bottom: 34px;
     font: 24px/34px $r-medium;
 }
 
 
 
-.cols--tabsContentLeasing {
+.cols--tabsLeasing {
     flex-wrap: nowrap;
     margin-bottom: 36px;
     white-space: nowrap;
-    
+
     &:last-child {
         margin-bottom: 0;
     }
 }
 
-.col--tabsContentLeasing {
-    
+.col--tabsLeasing {
+
 }
 
-.col--tabsContentLeasing--padding {
+.col--tabsLeasingPadding {
     padding-right: 40px;
 }
 
-.cols--tabsContentLeasing_text {
+.textLeasing {
     margin-bottom: 3px;
     font-size: 30px;
     line-height: 50px;
     color: $gray;
 }
 
-.cols--tabsContentLeasing_text_important {
+.textLeasing__info {
     font-size: 50px;
     color: $orange;
 }
 
-.cols--tabsContentLeasing_info {
+.colsCol__infoLeasing {
     font-size: 14px;
     line-height: 22px;
     color: $gray;
 }
 
-.cols--tabsContentLeasing_button {
+.colsCol__tabsLeasingButton {
     display: inline-block;
     width: 100%;
     margin-top: 10px;
@@ -101,7 +101,7 @@
 
 .colsCol--tabsContent {
     border-right: 1px solid #dfdfdf;
-    
+
     &:nth-child(2n) {
         border-right: 0;
     }
@@ -126,7 +126,7 @@
     padding-left: 30px;
     font-family: $r-bold;
     color: $black;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -144,7 +144,7 @@
     padding-left: 33px;
     font-family: $r-bold;
     color: $blue;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -162,7 +162,7 @@
     clear: both;
     font-family: $r-bold;
     padding-left: 30px;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -177,7 +177,7 @@
     padding-left: 30px;
     font-size: 14px;
     line-height: 24px;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -188,7 +188,7 @@
 }
 
 .tabsContent__map {
-    
+
     img {
         display: block;
         width: 100%;
@@ -200,12 +200,12 @@
 //address one line
 .tabsContentAddress--line {
     padding: 33px 40px 34px;
-    
+
     .tabsContentAddress__mail {
         float: none;
         margin-left: 10%;
     }
-    
+
     .tabsContentAddress__address {
         margin: 0;
     }
@@ -214,9 +214,9 @@
 
 
 /****************************** procedure ******************************/
-.cols--procedureOrder {
+.colsCol--procedureOrder {
     position: relative;
-    
+
     &:before {
         content: '';
         @include icon(arrow_procedure, 53px, 64px);
@@ -225,11 +225,10 @@
         right: -27px;
         z-index: 1;
     }
-    
+
     &:last-child {
         &:before {
             display: none;
         }
     }
 }
-
