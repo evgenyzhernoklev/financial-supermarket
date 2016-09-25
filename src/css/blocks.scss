@@ -19,7 +19,7 @@
     }
 }
 
-.tabsLinks_link {
+.tabsLinks__link {
     display: inline-block;
     padding-bottom: 19px;
     font-size: 16px;
@@ -34,7 +34,7 @@
         cursor: default;
     }
 
-    &.tabsLinks_link--more {
+    &.tabsLinks__link--more {
         position: relative;
         padding-right: 20px;
 
@@ -136,7 +136,7 @@
     }
 }
 
-.tabsLinks_link--hidden {
+.tabsLinks__link--hidden {
     padding: 0;
     border: 0;
 
@@ -157,7 +157,7 @@
 
 }
 
-.col--mailing {
+.colsCol--mailing {
     line-height: 42px;
     color: $white;
 }
@@ -166,7 +166,7 @@
 
 }
 
-.formMailing_label {
+.formMailing__label {
     position: relative;
     float: right;
     min-width: 280px;
@@ -182,14 +182,14 @@
     cursor: pointer;
 }
 
-.formMailingLabel_info {
+.formMailingLabel__info {
     display: inline-block;
     position: absolute;
     left: 20px;
     color: #c8d5d9;
 }
 
-.formMailingLabel_field {
+.formMailingLabel__field {
     width: 100%;
     padding-left: 52px;
     color: $white;
@@ -213,7 +213,7 @@
     }
 }
 
-.formMailing_submitButton {
+.formMailing__submitButton {
     float: right;
     display: inline-block;
     padding: 0 50px;
@@ -233,12 +233,12 @@
 
 .cols--news {
 
-    .cols--news_col {
+    .colsCol--news {
         padding: 20px 40px 62px;
     }
 }
 
-.cols--news_col {
+.colsCol--news {
     &.is-link {
         background-color: transparent;
         cursor: pointer;
@@ -250,11 +250,11 @@
     }
 }
 
-.news_imgWrapper {
+.imgWrapper {
     margin: 0 -20px 25px;
 }
 
-.news_imgWrapper_img {
+.imgWrapper__img {
     display: block;
     width: 100%;
 }
@@ -265,13 +265,13 @@
     text-transform: uppercase;
 }
 
-.news_info {
+.colsCol__newsInfo {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 22px;
 }
 
-.news_more {
+.moreLink {
     position: absolute;
     bottom: 33px;
     display: inline-block;
@@ -330,7 +330,7 @@
 
 }
 
-.points_colsWrapper {
+.pointsWrapper {
     box-shadow: 0 5px 20px 0 rgba(0,1,1, 0.1);
 }
 
@@ -338,7 +338,7 @@
     counter-reset: list;
     box-shadow: none;
 
-    .col_2 {
+    .colsCol--2 {
         position: relative;
         padding: 26px 30px 29px 94px;
 
@@ -362,7 +362,7 @@
 
 .cols--pointsSpecial {
 
-    .col_2 {
+    .colsCol--2 {
         &:first-child {
             &:before {
                 display: none;
@@ -371,12 +371,12 @@
     }
 }
 
-.col_2--pointsLeasing {
+.colsCol--2--pointsLeasing {
     position: relative;
     background: $blue;
 }
 
-.col_2--pointsLeasing_logo {
+.colsCol--2--pointsLeasing_logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -390,7 +390,7 @@
     text-align: center;
     border-top: 1px solid #dfdfdf;
 
-    .col_3 {
+    .colsCol--3 {
         padding: 45px 10px 44px;
     }
 }
@@ -417,7 +417,7 @@
 .cols--advantages {
     text-align: center;
 
-    .col_3 {
+    .colsCol--3 {
         padding: 20px 20px 44px;
     }
 }
@@ -428,7 +428,7 @@
     line-height: 110px;
 }
 
-.cols--advantages_imgWrapper_img {
+.cols--advantages_imgWrapper__img {
     vertical-align: middle;
 }
 
@@ -456,7 +456,7 @@
 .cols--clients {
     text-align: center;
 
-    .col_3 {
+    .colsCol--3 {
         padding: 0 20px 44px;
     }
 }
@@ -467,7 +467,7 @@
     line-height: 230px;
 }
 
-.cols--clients_imgWrapper_img {
+.cols--clients_imgWrapper__img {
     vertical-align: middle;
 }
 
@@ -488,7 +488,7 @@
     padding: 25px 40px 10px;
 
     &.cols--request {
-        .col_3 {
+        .colsCol--3 {
             padding-right: 36px;
             border: 0;
 
@@ -499,7 +499,7 @@
     }
 }
 
-.formRequest_label {
+.formRequestLabel {
     font-size: 14px;
     color: $gray;
     cursor: pointer;
@@ -509,7 +509,7 @@
     margin: 7px 0 30px;
 }
 
-.formRequestField_input {
+.formRequestField__input {
     width: 100%;
     height: 52px;
     padding: 0 20px;
@@ -518,7 +518,7 @@
     border-radius: 26px;
 }
 
-.formRequestField_select {
+.formRequestField__select {
     appearance: none;
     position: relative;
     display: block;
@@ -532,11 +532,11 @@
     cursor: pointer;
 }
 
-.formRequestSelect_option {
+.formRequestSelect__option {
 
 }
 
-.formRequest_submitButton {
+.formRequestField__submitButton {
     display: inline-block;
     width: 100%;
     height: 52px;
@@ -627,7 +627,7 @@
 .cols--procedure {
     color: $white;
 
-    .col_3 {
+    .colsCol--3 {
         border-right-color: $white;
     }
 }

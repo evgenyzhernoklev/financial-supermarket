@@ -4,208 +4,208 @@ html
 	body
 		include src/partials/menu.slim
 		include src/partials/slider.slim
-		
-		.content__in--full.content__in--mainWrapper.clearfix
+
+		.contentIn--full.contentIn--mainWrapper.clearfix
 			.sidebar
-				ul.menu__sidebar
+				ul.sidebar__menu.menuSidebar
 					li
-						a.menu__sidebar_link href="#advantages" Ключевые преимущества
+						a.menuSidebar__link href="#advantages" Ключевые преимущества
 					li
-						a.menu__sidebar_link href="#leasing" Лизинг техники по программе «Стандарт»
+						a.menuSidebar__link href="#leasing" Лизинг техники по программе «Стандарт»
 					li
-						a.menu__sidebar_link href="#procedure" Порядок заключения сделки
+						a.menuSidebar__link href="#procedure" Порядок заключения сделки
 					li
-						a.menu__sidebar_link href="#portrait" Портрет Газпромбанк Лизинг
+						a.menuSidebar__link href="#portrait" Портрет Газпромбанк Лизинг
 					li
-						a.menu__sidebar_link href="#contacts" Контакты
+						a.menuSidebar__link href="#contacts" Контакты
 					li
-						a.menu__sidebar_link href="#clients" Клиенты
+						a.menuSidebar__link href="#clients" Клиенты
 					li
-						a.menu__sidebar_link.menu__sidebar_link--button href="#request" отправить заявку
-				
+						a.menuSidebar__link.menuSidebar__link--button href="#request" отправить заявку
+
 			.content
 				.advantages#advantages
 					.title.title--top Ключевые преимущества
-					.cols.cols--shadow.cols--advantages
-						.col_3
+					.cols.withShadow.cols--advantages
+						.cols__col.colsCol.colsCol--3
 							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper_img src="img/icons/advantage_1_blue.png"
+								img.cols--advantages_imgWrapper__img src="img/icons/advantage_1_blue.png"
 							.cols--advantages_title Надежность
 							.cols--advantages_info Высочайший уровень надежности подтвержден рейтинговым агентством «Эксперт РА»
-						.col_3
+						.cols__col.colsCol.colsCol--3
 							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper_img src="img/icons/advantage_2_blue.png"
+								img.cols--advantages_imgWrapper__img src="img/icons/advantage_2_blue.png"
 							.cols--advantages_title Индивидуальный подход
 							.cols--advantages_info Максимальный учет специфики бизнеса клиента и персонализированные решения
-						.col_3
+						.cols__col.colsCol.colsCol--3
 							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper_img src="img/icons/advantage_3_blue.png"
+								img.cols--advantages_imgWrapper__img src="img/icons/advantage_3_blue.png"
 							.cols--advantages_title Профессионализм
 							.cols--advantages_info Высокая компетенция сотрудников и мировые стандарты качества обслуживания
-						.col_3
+						.cols__col.colsCol.colsCol--3
 							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper_img src="img/icons/advantage_4_blue.png"
+								img.cols--advantages_imgWrapper__img src="img/icons/advantage_4_blue.png"
 							.cols--advantages_title Прозрачные условия
 							.cols--advantages_info Отсутствие скрытых комиссий и детальное описание обязательств перед клиентом
-						.col_3
+						.cols__col.colsCol.colsCol--3
 							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper_img src="img/icons/advantage_5_blue.png"
+								img.cols--advantages_imgWrapper__img src="img/icons/advantage_5_blue.png"
 							.cols--advantages_title Территориальная доступность
 							.cols--advantages_info Обслуживание через региональную сеть Газпромбанка (более 500 точек продаж)
-						.col_3
+						.cols__col.colsCol.colsCol--3
 							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper_img src="img/icons/advantage_other_blue.png"
+								img.cols--advantages_imgWrapper__img src="img/icons/advantage_other_blue.png"
 							.cols--advantages_title.cols--advantages_title--more И другие преимущества
-				
+
 				.tabs#leasing
 					.title Лизинг техники по программе "Стандарт"
 					ul.tabsLinks
 						li
-							a.tabsLinks_link.is-active href="#tab1-leasing" Спецтехника
+							a.tabsLinks__link.is-active href="#tab1-leasing" Спецтехника
 						li
-							a.tabsLinks_link href="#tab2-leasing" Оборудование
+							a.tabsLinks__link href="#tab2-leasing" Оборудование
 						li
-							a.tabsLinks_link href="#tab3-leasing" Легковой транспорт
+							a.tabsLinks__link href="#tab3-leasing" Легковой транспорт
 						li
-							a.tabsLinks_link href="#tab4-leasing" Грузовой транспорт
+							a.tabsLinks__link href="#tab4-leasing" Грузовой транспорт
 					.tabsWrapper.tabsWrapper--leasing
 						.tabsContent.is-active id="tab1-leasing"
 							.cols.cols--leasing
-								.col_3_1.col--leasing
+								.cols__col.colsCol.colsCol--3_1.col--leasing
 									.tabsContentLeasingBg.tabsContentLeasingBg--technics
-								.col_3_2.col--leasing
+								.cols__col.colsCol.colsCol--3_2.col--leasing
 									.tabsContentLeasing
-										.tabsContentLeasing_title 
+										.tabsContentLeasing_title
 											| Лизинг грузового транспорта<br/>по программе «Стандарт»
 										.cols.cols--tabsContentLeasing
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 48 
+													| До
+													span.cols--tabsContentLeasing_text_important 48
 													| мес.
 												p.cols--tabsContentLeasing_info Срок договора лизинга
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 5,5%
 												p.cols--tabsContentLeasing_info Годовое удорожание
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 15%
 												p.cols--tabsContentLeasing_info Аванс
 										.cols.cols--tabsContentLeasing
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 300 
+													| До
+													span.cols--tabsContentLeasing_text_important 300
 													| млн. руб.
 												p.cols--tabsContentLeasing_info Объем финансирования
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												a.cols--tabsContentLeasing_button.scroll-link href="#request" оформить заявку
 						.tabsContent id="tab2-leasing"
 							.cols.cols--leasing
-								.col_3_1.col--leasing
+								.cols__col.colsCol.colsCol--3_1.col--leasing
 									.tabsContentLeasingBg.tabsContentLeasingBg--technics
-								.col_3_2.col--leasing
+								.cols__col.colsCol.colsCol--3_2.col--leasing
 									.tabsContentLeasing
-										.tabsContentLeasing_title 
+										.tabsContentLeasing_title
 											| Лизинг грузового транспорта<br/>по программе «Стандарт»
 										.cols.cols--tabsContentLeasing
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 48 
+													| До
+													span.cols--tabsContentLeasing_text_important 48
 													| мес.
 												p.cols--tabsContentLeasing_info Срок договора лизинга
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 5,5%
 												p.cols--tabsContentLeasing_info Годовое удорожание
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 15%
 												p.cols--tabsContentLeasing_info Аванс
 										.cols.cols--tabsContentLeasing
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 300 
+													| До
+													span.cols--tabsContentLeasing_text_important 300
 													| млн. руб.
 												p.cols--tabsContentLeasing_info Объем финансирования
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												a.cols--tabsContentLeasing_button.scroll-link href="#request" оформить заявку
 						.tabsContent id="tab3-leasing"
 							.cols.cols--leasing
-								.col_3_1.col--leasing
+								.cols__col.colsCol.colsCol--3_1.col--leasing
 									.tabsContentLeasingBg.tabsContentLeasingBg--technics
-								.col_3_2.col--leasing
+								.cols__col.colsCol.colsCol--3_2.col--leasing
 									.tabsContentLeasing
-										.tabsContentLeasing_title 
+										.tabsContentLeasing_title
 											| Лизинг грузового транспорта<br/>по программе «Стандарт»
 										.cols.cols--tabsContentLeasing
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 48 
+													| До
+													span.cols--tabsContentLeasing_text_important 48
 													| мес.
 												p.cols--tabsContentLeasing_info Срок договора лизинга
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 5,5%
 												p.cols--tabsContentLeasing_info Годовое удорожание
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 15%
 												p.cols--tabsContentLeasing_info Аванс
 										.cols.cols--tabsContentLeasing
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 300 
+													| До
+													span.cols--tabsContentLeasing_text_important 300
 													| млн. руб.
 												p.cols--tabsContentLeasing_info Объем финансирования
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												a.cols--tabsContentLeasing_button.scroll-link href="#request" оформить заявку
 						.tabsContent id="tab4-leasing"
 							.cols.cols--leasing
-								.col_3_1.col--leasing
+								.cols__col.colsCol.colsCol--3_1.col--leasing
 									.tabsContentLeasingBg.tabsContentLeasingBg--technics
-								.col_3_2.col--leasing
+								.cols__col.colsCol.colsCol--3_2.col--leasing
 									.tabsContentLeasing
-										.tabsContentLeasing_title 
+										.tabsContentLeasing_title
 											| Лизинг грузового транспорта<br/>по программе «Стандарт»
 										.cols.cols--tabsContentLeasing
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 48 
+													| До
+													span.cols--tabsContentLeasing_text_important 48
 													| мес.
 												p.cols--tabsContentLeasing_info Срок договора лизинга
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 5,5%
 												p.cols--tabsContentLeasing_info Годовое удорожание
-											.col_3
+											.cols__col.colsCol.colsCol--3
 												p.cols--tabsContentLeasing_text
-													| От 
+													| От
 													span.cols--tabsContentLeasing_text_important 15%
 												p.cols--tabsContentLeasing_info Аванс
 										.cols.cols--tabsContentLeasing
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												p.cols--tabsContentLeasing_text
-													| До 
-													span.cols--tabsContentLeasing_text_important 300 
+													| До
+													span.cols--tabsContentLeasing_text_important 300
 													| млн. руб.
 												p.cols--tabsContentLeasing_info Объем финансирования
-											.col_2.col--tabsContentLeasing.col--tabsContentLeasing--padding
+											.colsCol--2.cols__col.colsCol.col--tabsContentLeasing.col--tabsContentLeasing--padding
 												a.cols--tabsContentLeasing_button.scroll-link href="#request" оформить заявку
-				
+
 				.procedure#procedure
 					.title.title--download.clearfix
 						| Порядок заключения сделки
@@ -213,33 +213,33 @@ html
 							| Список документов&nbsp;
 							span
 								| 35 Кб
-					.cols.cols--shadow.cols--procedure
-						.col_3.cols--procedure_order.cols--procedureOrder
+					.cols.withShadow.cols--procedure
+						.cols__col.colsCol.colsCol--3.cols--procedure_order.cols--procedureOrder
 							p.cols--procedureImgWrapper
 								img src="img/icons/procedure_1.png"
 							p.cols--procedureTitle
 								| Оформите заявку
 							p.cols--procedureInfo
 								| Наш специалист свяжется с вами в течение 2-х рабочих дней. Срок деятельности компании должен составлять не менее 2-х лет, а минимальная годовая выручка — от 200 млн р.
-						.col_3.cols--procedure_order.cols--procedureOrder
+						.cols__col.colsCol.colsCol--3.cols--procedure_order.cols--procedureOrder
 							p.cols--procedureImgWrapper
 								img src="img/icons/procedure_2.png"
 							p.cols--procedureTitle
 								| Предоставьте полный пакет документов
 							p.cols--procedureInfo
 								| Мы примем решение за 3 рабочих дня. Персональный менеджер проконсультирует вас по любым возникшим у вас вопросам
-						.col_3.cols--procedure_order.cols--procedureOrder
+						.cols__col.colsCol.colsCol--3.cols--procedure_order.cols--procedureOrder
 							p.cols--procedureImgWrapper
 								img src="img/icons/procedure_3.png"
 							p.cols--procedureTitle
 								| В течение 2-х рабочих дней мы подпишем договор
 							p.cols--procedureInfo
 								| Для вашего удобства используются типовые формы договоров, которые максимально защищают ваши интересы.
-				
+
 				include src/partials/portrait.slim
 				include src/partials/contacts.slim
 				include src/partials/clients.slim
 				include src/partials/request.slim
-				
+
 		include src/partials/mailing.slim
 		include src/partials/footer.slim

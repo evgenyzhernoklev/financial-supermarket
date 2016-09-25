@@ -4,41 +4,41 @@
     background: $white;
 }
 
-.footer__cards {
+.cardsFooter {
     float: right;
     margin-top: 3px;
     width: 80px;
     text-align: right;
 }
 
-.footer__cards_img {
+.cardsFooter__img {
     margin-bottom: 10px;
 }
 
-.menu__footer {
+.menuFooter {
     margin-right: 150px;
     margin-bottom: 11px;
     font-size: 0;
     line-height: 0;
     text-align: justify;
-    
+
     &:after {
         content: '';
         display: inline-block;
         width: 100%;
     }
-    
+
     li {
         display: inline-block;
     }
 }
 
-.menu__footer_link {
+.menuFooter__link {
     display: inline-block;
     font-size: 14px;
     line-height: 27px;
     color: #8b989d;
-    
+
     &:last-child {
         margin-right: 0;
     }
@@ -46,11 +46,11 @@
 
 
 
-.footer__contacts {
+.contactsFooter {
     margin-right: 150px;
 }
 
-.footer__contacts_link {
+.contactsFooter__link {
     position: relative;
     display: inline-block;
     margin-right: 45px;
@@ -58,11 +58,11 @@
     font-size: 14px;
     line-height: 27px;
     color: $black;
-    
+
     &:last-child {
         margin-right: 0;
     }
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -72,24 +72,24 @@
     }
 }
 
-.footer__contacts_link--phone {
+.contactsFooter__link--phone {
     &:before {
         @include icon(phone_blue, 15px, 16px);
     }
 }
 
-.footer__contacts_link--mail {
+.contactsFooter__link--mail {
     &:before {
         @include icon(mail_blue, 15px, 10px);
     }
 }
 
-.footer__contacts_link--address {
+.contactsFooter__link--address {
     &:before {
         @include icon(point_blue, 13px, 17px);
     }
 }
 
-.footer__contacts_link--map {
+.contactsFooter__link--map {
     float: right;
 }

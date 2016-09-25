@@ -5,240 +5,240 @@ html
 		include src/partials/menu.slim
 		include src/partials/slider.slim
 
-		.content__in--full.content__in--mainWrapper.clearfix
-			.sidebar
-				ul.menu__sidebar
+		.contentIn.contentIn--full.contentIn--mainWrapper.clearfix
+			.contentIn__sidebar.sidebar
+				ul.sidebar__menu.menuSidebar
 					li
-						a.menu__sidebar_link href="#goals" Цели и эффект от внедрения
+						a.menuSidebar__link href="#goals" Цели и эффект от внедрения
 					li
-						a.menu__sidebar_link href="#usage" Актуальность использования
+						a.menuSidebar__link href="#usage" Актуальность использования
 					li
-						a.menu__sidebar_link href="#cash_advantages" Преимущества
+						a.menuSidebar__link href="#cash_advantages" Преимущества
 					li
-						a.menu__sidebar_link href="#cash_info" Cash Management как отдельное окно
+						a.menuSidebar__link href="#cash_info" Cash Management как отдельное окно
 					li
-						a.menu__sidebar_link href="#services" Комплекс услуг
+						a.menuSidebar__link href="#services" Комплекс услуг
 					li
-						a.menu__sidebar_link href="#management" Управление входящими потоками денежных средств
+						a.menuSidebar__link href="#management" Управление входящими потоками денежных средств
 					li
-						a.menu__sidebar_link href="#company" Ваша компания
+						a.menuSidebar__link href="#company" Ваша компания
 					li
-						a.menu__sidebar_link.menu__sidebar_link--button href="#request" отправить заявку
+						a.menuSidebar__link.menuSidebar__link--button href="#request" отправить заявку
 
-			.content
-				.points#goals
-					.title.title--top Цели и эффект от внедрения
-					.points_colsWrapper
-						ul.cols.cols--shadow.cols--points
-							li.col_2
+			.contentIn__content.content
+				.content__points.points#goals
+					.points__title.title.title--top Цели и эффект от внедрения
+					.points__colsWrapper.pointsWrapper
+						ul.pointsWrapper__cols.cols.withShadow.cols--points
+							li.cols__col.colsCol.colsCol--2
 								| Получение дополнительного дохода за счет оптимизации процессов внутри группы компаний
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Уменьшение потребности в дополнительном финансировании
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Оперативное получение информации о текущей ликвидности группы компаний
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Упрощение ежедневного финансового учета внутри группы компаний
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Решение проблемы кассовых<br/>разрывов
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Снижение операционных<br/>расходов
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Оперативное управление<br/>оборотными активами
-							li.col_2
+							li.cols__col.colsCol.colsCol--2
 								| Оптимизация процентных доходов<br/>и расходов
 
-				.news#usage
-					.title Актуальность использования
-					.cols.cols--shadow.cols--news.cols--newsUsage
-						.col_3.cols--news_col.is-link data-href="test1"
-							p.news_imgWrapper
-								img.news_imgWrapper_img src="img/news/news_1.jpg"
-							p.news_info Создание корпоративных казначейств
-							a.news_more подробнее
-						.col_3.cols--news_col.is-link data-href="test2"
-							p.news_imgWrapper
-								img.news_imgWrapper_img src="img/news/news_2.jpg"
-							p.news_info Акцент на бизнес
-							a.news_more подробнее
-						.col_3.cols--news_col.is-link data-href="test3"
-							p.news_imgWrapper
-								img.news_imgWrapper_img src="img/news/news_3.jpg"
-							p.news_info Увеличить стоимость бизнеса
-							a.news_more подробнее
+				.content__news.news#usage
+					.news__title.title Актуальность использования
+					.news__cols.cols.withShadow.cols--news.cols--newsUsage
+						.cols__col.colsCol.colsCol--3.colsCol--news.is-link data-href="test1"
+							p.colsCol__imgWrapper.imgWrapper
+								img.imgWrapper__img src="img/news/news_1.jpg"
+							p.colsCol__newsInfo Создание корпоративных казначейств
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--3.colsCol--news.is-link data-href="test2"
+							p.colsCol__imgWrapper.imgWrapper
+								img.imgWrapper__img src="img/news/news_2.jpg"
+							p.colsCol__newsInfo Акцент на бизнес
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--3.colsCol--news.is-link data-href="test3"
+							p.colsCol__imgWrapper.imgWrapper
+								img.imgWrapper__img src="img/news/news_3.jpg"
+							p.colsCol__newsInfo Увеличить стоимость бизнеса
+							a.colsCol__moreLink.moreLink подробнее
 
-				.points#cash_advantages
-					.title Преимущества
-					.points_colsWrapper
-						ul.cols.cols--shadow.cols--points.cols--points-adv
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--1 src="img/icons/advantage_cash_1.png"
+				.content__points.points#cash_advantages
+					.points__title.title Преимущества
+					.points__colsWrapper.pointsWrapper
+						ul.pointsWrapper__cols.cols.withShadow.cols--points.cols--pointsAdv
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--1 src="img/icons/advantage_cash_1.png"
 								| Индивидуальные решения для вашего бизнеса с учетом текущих управленческих и фин. потребностей
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--2 src="img/icons/advantage_cash_2.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--2 src="img/icons/advantage_cash_2.png"
 								| Различные режимы<br/>функционирования счетов
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--3 src="img/icons/advantage_cash_3.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--3 src="img/icons/advantage_cash_3.png"
 								| Простота в применении, не требуют сложного ПО, максимальная автоматизация решений
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--4 src="img/icons/advantage_cash_4.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--4 src="img/icons/advantage_cash_4.png"
 								| Высокая степень безопасности и защиты информации
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--5 src="img/icons/advantage_cash_5.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--5 src="img/icons/advantage_cash_5.png"
 								| Универсальная отработанная договорная, технологическая и информационная база
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--6 src="img/icons/advantage_cash_6.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--6 src="img/icons/advantage_cash_6.png"
 								| Опыт успешно реализованных проектов для  клиентов различных отраслевых сегментов
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--7 src="img/icons/advantage_cash_7.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--7 src="img/icons/advantage_cash_7.png"
 								| Разветвленная региональная сеть Банка (от Калининграда до Южно-Сахалинска), единые стандарты обслуживания
-							li.col_2
-								img.cols--points-adv_img.cols--points-adv_img--8 src="img/icons/advantage_cash_8.png"
+							li.cols__col.colsCol.colsCol--2
+								img.colsCol__imgPointsAdv.colsCol__imgPointsAdv--8 src="img/icons/advantage_cash_8.png"
 								| Команда профессионалов в области сложных расчетных продуктов
 
-				.cashInfo#cash_info
-					.title Cash Management как отдельное окно
-					.cols--shadow.cols--cashInfo.clearfix
-						img.cashInfo_img src="img/window.jpg"
-						p.cashInfo_info
+				.content__cashInfo.cashInfo#cash_info
+					.cashInfo__title.title Cash Management как отдельное окно
+					.cashInfo__block.withShadow.cashInfoBlock.clearfix
+						img.cashInfoBlock__img src="img/window.jpg"
+						p.cashInfoBlock__text
 							| Единообразие и высокая степень автоматизации в управлении процентными ставками, остатками, денежными потоками, унификация форматов, документации, единые каналы доставки информации, специальные технические решения для обмена между банковской системой и ERP – вот лишь неполный набор факторов, помогающих создавать добавленную стоимость в финансах корпораций.
 
-				.services#services
-					.title Комплекс услуг
-					.cols.cols--shadow
-						.col_4.col--service
-							img.services_img src="img/service_cash1.jpg"
-							p.services_info
+				.content__services.services#services
+					.services__title.title Комплекс услуг
+					.services__cols.cols.withShadow
+						.cols__col.colsCol.colsCol--4.colsCol--service
+							img.colsCol__imgServices src="img/service_cash1.jpg"
+							p.colsCol__infoServices
 								| Управление ликвидностью
-							a.news_more подробнее
-						.col_4.col--service
-							img.services_img src="img/service_cash2.jpg"
-							p.services_info
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--4.colsCol--service
+							img.colsCol__imgServices src="img/service_cash2.jpg"
+							p.colsCol__infoServices
 								| Продукты электронного документооборота
-							a.news_more подробнее
-						.col_4.col--service
-							img.services_img src="img/service_cash3.jpg"
-							p.services_info
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--4.colsCol--service
+							img.colsCol__imgServices src="img/service_cash3.jpg"
+							p.colsCol__infoServices
 								| Управление входящими потоками денежных средств
-							a.news_more подробнее
-						.col_4.col--service
-							img.services_img src="img/service_cash4.jpg"
-							p.services_info
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--4.colsCol--service
+							img.colsCol__imgServices src="img/service_cash4.jpg"
+							p.colsCol__infoServices
 								| Управление исходящими потоками денежных средств
-							a.news_more подробнее
+							a.colsCol__moreLink.moreLink подробнее
 
-				.tabs#management
-					.title Управление входящими потоками денежных средств
-					ul.tabsLinks
+				.content__tabs.tabs#management
+					.tabs__title.title Управление входящими потоками денежных средств
+					ul.tabs__tabsLinks.tabsLinks
 						li
-							a.tabsLinks_link.is-active href="#tab1-management"
+							a.tabsLinks__link.is-active href="#tab1-management"
 								| Управление<br/>ликвидностью
 						li
-							a.tabsLinks_link href="#tab2-management"
+							a.tabsLinks__link href="#tab2-management"
 								| Продукты электронного<br/>документооборота
 						li
-							a.tabsLinks_link href="#tab3-management"
+							a.tabsLinks__link href="#tab3-management"
 								| Управление входящими<br/>потоками денежных средств
 						li
-							a.tabsLinks_link href="#tab4-management"
+							a.tabsLinks__link href="#tab4-management"
 								| Управление исходящими<br/>потоками денежных средств
-					.tabsWrapper
-						.tabsContent.is-active id="tab1-management"
-							.tabs--sub
-								ul.tabsLinks--sub
+					.tabs__tabsWrapper.tabsWrapper
+						.tabsWrapper__tabsContent.tabsContent.is-active id="tab1-management"
+							.tabsContent__tabsSub.tabsSub
+								ul.tabsSub__links.tabsSubLinks
 									li
-										a.tabsLinks_link--sub.is-active href="#tab1-management-1"
+										a.tabsSubLinks__link.is-active href="#tab1-management-1"
 											| Идентификация входящих платежей
 									li
-										a.tabsLinks_link--sub href="#tab1-management-2"
+										a.tabsSubLinks__link href="#tab1-management-2"
 											| Идентификация входящих платежей
-								.tabsWrapper--sub
-									.tabsContent--sub.is-active id="tab1-management-1"
-										.title
+								.tabsSub__wrapper.tabsSubWrapper
+									.tabsSubWrapper__content.tabsContentSub.is-active id="tab1-management-1"
+										.tabsContentSub__title.title
 											| Идентификация входящих платежей с использованием уникального идентификатора платежа (УИП)
-										.cols.cols--manage
-											.col_3.col--manage.col--manage1
-												.col--manage_text
+										.tabsContentSub__cols.cols.cols--manage
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage1
+												.colsCol__textManage
 													| Оформление Плательщиком платежного поручения с использованием УИП
-												.col--manage_info
+												.colsCol__infoManage
 													| УИП - уникальный идентификатор платежа
-												.col--manage_next
+												.colsCol__nextManage
 													| Распоряжение
-											.col_3.col--manage.col--manage2
-												.col--manage_text
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage2
+												.colsCol__textManage
 													| Контроль УИП* посредством проверки ключевого разряда в случае перевода и осуществление перевода при положительном результате проверки
-												.col--manage_next
+												.colsCol__nextManage
 													| Перевод
-											.col_3.col--manage.col--manage3
-												img.col--manage_img src="img/logos/gasprombank_blue.png"
-												.col--manage_text
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage3
+												img.colsCol__imgManage src="img/logos/gasprombank_blue.png"
+												.colsCol__textManage
 													| Зачисление денежных средств на счет получателя
-												.col--manage_info
+												.colsCol__infoManage
 													| 40822
-												.col--manage_next
+												.colsCol__nextManage
 													| Отчет
-											.col_3.col--manage.col--manage4
-												img.col--manage_img src="img/manage-step6.png"
-											.col_3.col--manage.col--manage5
-												img.col--manage_img src="img/manage-step5.png"
-												.col--manage_text
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage4
+												img.colsCol__imgManage src="img/manage-step6.png"
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage5
+												img.colsCol__imgManage src="img/manage-step5.png"
+												.colsCol__textManage
 													| Счет получателя. Специальный банковский счет для идентификации платежа.
-											.col_3.col--manage.col--manage6
-												.col--manage_title
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage6
+												.colsCol__titleManage
 													| Клиент
-												.col--manage_text
+												.colsCol__textManage
 													| Направление получателю – клиенту Банка ГПБ (АО) ежедневного и промежуточного отчета по входящим платежам с использованием УИП
-									.tabsContent--sub id="tab1-management-2"
-										.title
-											| Идентификация входящих платежей
-										.cols.cols--manage
-											.col_3.col--manage.col--manage1
-												.col--manage_text
-													| Оформление Плательщиком
-												.col--manage_info
+									.tabsSubWrapper__content.tabsContentSub id="tab1-management-2"
+										.tabsContentSub__title.title
+											| Идентификация входящих платежей с использованием уникального идентификатора платежа (УИП)
+										.tabsContentSub__cols.cols.cols--manage
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage1
+												.colsCol__textManage
+													| Оформление Плательщиком платежного поручения с использованием УИП
+												.colsCol__infoManage
 													| УИП - уникальный идентификатор платежа
-												.col--manage_next
+												.colsCol__nextManage
 													| Распоряжение
-											.col_3.col--manage.col--manage2
-												.col--manage_text
-													| Контроль УИП* посредством проверки ключевого разряда в случае перевода и осуществление перевода
-												.col--manage_next
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage2
+												.colsCol__textManage
+													| Контроль УИП* посредством проверки ключевого разряда в случае перевода и осуществление перевода при положительном результате проверки
+												.colsCol__nextManage
 													| Перевод
-											.col_3.col--manage.col--manage3
-												img.col--manage_img src="img/logos/gasprombank_blue.png"
-												.col--manage_text
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage3
+												img.colsCol__imgManage src="img/logos/gasprombank_blue.png"
+												.colsCol__textManage
 													| Зачисление денежных средств на счет получателя
-												.col--manage_info
-													| 411111
-												.col--manage_next
+												.colsCol__infoManage
+													| 40822
+												.colsCol__nextManage
 													| Отчет
-											.col_3.col--manage.col--manage4
-												img.col--manage_img src="img/manage-step6.png"
-											.col_3.col--manage.col--manage5
-												img.col--manage_img src="img/manage-step5.png"
-												.col--manage_text
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage4
+												img.colsCol__imgManage src="img/manage-step6.png"
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage5
+												img.colsCol__imgManage src="img/manage-step5.png"
+												.colsCol__textManage
 													| Счет получателя. Специальный банковский счет для идентификации платежа.
-											.col_3.col--manage.col--manage6
-												.col--manage_title
+											.cols__col.colsCol.colsCol--3.colsCol--manage.colsCol--manage6
+												.colsCol__titleManage
 													| Клиент
-												.col--manage_text
+												.colsCol__textManage
 													| Направление получателю – клиенту Банка ГПБ (АО) ежедневного и промежуточного отчета по входящим платежам с использованием УИП
 
-				.company#company
-					.title Ваша компания
-					.cols.cols--company
-						.col_2.col--company.col--companyList
-							ul.col--company_list
-								li.col--company_list_item
+				.content__company.company#company
+					.company__title.title Ваша компания
+					.company__cols.cols.cols--company
+						.cols__col.colsCol.colsCol--2.colsCol--company.colsCol--companyList
+							ul.colsCol__companyList.companyList
+								li.companyList__item
 									| С разветвленной сетью дочерних компаний и / или филиалов?
-								li.col--company_list_item
+								li.companyList__item
 									| С централизованным казначейством?
-								li.col--company_list_item
+								li.companyList__item
 									| Оказывает массовое предоставление товаров/услуг юридическим и / или физическим лицам и имеет большое количество контрагентов?
-								li.col--company_list_item
+								li.companyList__item
 									| Получает или предоставляет денежные средства в рамках проектов корпоративного (государственного) целевого финансирования?
-						.col_2.col--company.col--companyInfo
-							img.col--companyInfo_img src="img/icons/cash_monitor.png"
-							p.col--companyInfo_text
+						.cols__col.colsCol.colsCol--2.colsCol--company.colsCol--companyInfo
+							img.colsCol__imgCompany src="img/icons/cash_monitor.png"
+							p.colsCol__infoCompany
 								| Решения Cash Management Банка ГПБ (АО) – это то, что Вам может помочь в управлении денежными потоками
 
 				include src/partials/request.slim

@@ -1,11 +1,11 @@
 /****************************** risks management ******************************/
 .risksManagement {
-    
+
 }
 
 .cols--riskManagement {
     padding: 35px 40px 40px;
-    
+
     .col--riskManagement {
         border: 0;
     }
@@ -43,12 +43,12 @@
     position: relative;
     padding: 21px 20px 20px 60px;
     border-bottom: 1px solid #dfdfdf;
-    
+
     &:last-child {
         padding-bottom: 0;
         border: 0;
     }
-    
+
     &:before {
         display: inline-block;
         counter-increment: list;
@@ -64,7 +64,7 @@
         border: 2px solid $blue;
         border-radius: 50%;
     }
-    
+
     b {
         font-family: $r-medium;
         color: $blue;
@@ -75,7 +75,7 @@
 
 /****************************** risks types ******************************/
 .risksType {
-    
+
 }
 
 .col--type {
@@ -122,7 +122,7 @@
 .col--typeBlock {
     padding: 21px 0 24px;
     border-bottom: 1px solid #dfdfdf;
-    
+
     &:last-child {
         border: 0;
     }
@@ -138,7 +138,7 @@
 }
 
 .col--typeBlock_list {
-    
+
 }
 
 .col--typeBlock_list_item {
@@ -147,7 +147,7 @@
     padding-left: 20px;
     font-size: 14px;
     line-height: 22px;
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -158,7 +158,7 @@
         left: 0;
         background: $orange;
     }
-    
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -178,7 +178,7 @@
     line-height: 26px;
     color: $white;
     background: $orange url('../img/risks_info_bg.png') no-repeat right center;
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -193,13 +193,13 @@
 
 /****************************** additional opportunities ******************************/
 .cols--additional {
-    
-    .cols--cashInfo {
+
+    .cashInfoBlock {
         padding: 15px 40px 10px;
         border-bottom: 1px solid #dfdfdf;
     }
-    
-    .cashInfo_info {
+
+    .cashInfoBlock__text {
         margin-top: 15px;
         margin-bottom: 15px;
         padding-right: 10%;
@@ -212,7 +212,7 @@
 
 /****************************** stages ******************************/
 .stages {
-    
+
 }
 
 .cols--steps {
@@ -220,7 +220,7 @@
 }
 
 .col--step {
-    
+
 }
 
 .col--step_item {
@@ -231,7 +231,7 @@
     color: #fff;
     vertical-align: bottom;
     background: linear-gradient(to right, $blue, $orange);
-    
+
     &:before {
         content: '';
         position: absolute;
@@ -241,7 +241,7 @@
         border-left: 21px solid $orange;
         z-index: 2;
     }
-    
+
     &:after {
         content: '';
         position: absolute;
@@ -255,7 +255,7 @@
 
 .col--step_item--start {
     background: $blue;
-    
+
     &:before {
         border-left-color: $blue;
     }
@@ -263,7 +263,7 @@
 
 .col--step_item--end {
     background: $orange;
-    
+
     &:before,
     &:after {
         display: none;
@@ -273,7 +273,7 @@
 .col--stepInfo {
     padding: 17px 20px 34px;
     border-right: 1px solid #dfdfdf;
-    
+
     &:last-child {
         border: 0;
     }
@@ -288,7 +288,7 @@
 
 /****************************** key advantages ******************************/
 .keyAdvantages {
-    
+
 }
 
 .cols--key {
@@ -308,7 +308,7 @@
     text-align: center;
 }
 
-.col--key_imgWrapper_img {
+.col--key_imgWrapper__img {
     vertical-align: middle;
 }
 
@@ -329,7 +329,7 @@
     padding-left: 20px;
     font-size: 14px;
     line-height: 22px;
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -346,22 +346,22 @@
 
 /****************************** how doest it work ******************************/
 .how {
-    
+
 }
 
 .cols--procedureHow {
-    
+
     .cols--procedure_order {
         padding: 2px 30px 42px;
         text-align: left;
     }
-    
+
     .cols--procedureImgWrapper {
         margin-bottom: 10px;
         height: 150px;
         line-height: 150px;
     }
-    
+
     .cols--procedureInfo {
         font-size: 16px;
         line-height: 28px;
@@ -372,7 +372,7 @@
 
 /****************************** contacts ******************************/
 .contacts {
-    
+
     .cols {
         flex-wrap: nowrap;
     }
@@ -394,7 +394,7 @@
     padding-bottom: 19px;
     font: 18px/24px $r-bold;
     text-transform: uppercase;
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -430,11 +430,10 @@
 }
 
 .contacts_email {
-    
+
 }
 
 .contacts_email_link {
     font: 16px/22px $r-bold;
     color: $blue;
 }
-

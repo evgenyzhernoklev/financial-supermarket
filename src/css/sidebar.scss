@@ -5,7 +5,7 @@
     background: $black;
 }
 
-.menu__sidebar {
+.menuSidebar {
     width: 207px;
     
     &.is-fixed {
@@ -18,14 +18,14 @@
     
     li {
         &:first-child {
-            .menu__sidebar_link {
+            .menuSidebar__link {
                 border: 0;
             }
         }
     }
 }
 
-.menu__sidebar_link {
+.menuSidebar__link {
     display: inline-block;
     padding: 16px 0;
     width: 100%;
@@ -43,7 +43,7 @@
         cursor: default;
     }
     
-    &.menu__sidebar_link--button {
+    &.menuSidebar__link--button {
         margin-top: 18px;
         padding: 0;
         font: 18px/52px $r-bold;

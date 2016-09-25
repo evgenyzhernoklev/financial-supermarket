@@ -1,21 +1,21 @@
 /****************************** usage ******************************/
 .cols--newsUsage {
     text-align: center;
-    
-    .cols--news_col {
+
+    .colsCol--news {
         padding-bottom: 55px;
     }
-    
-    .news_imgWrapper {
+
+    .imgWrapper {
         margin-bottom: 21px;
     }
-    
-    .news_info {
+
+    .colsCol__newsInfo {
         font-size: 16px;
         line-height: 24px;
     }
-    
-    .news_more {
+
+    .moreLink {
         bottom: 28px;
         left: 50%;
         transform: translateX(-50%);
@@ -25,51 +25,51 @@
 
 
 /****************************** advantages ******************************/
-.cols--points-adv {
-    
-    .col_2 {
+.cols--pointsAdv {
+
+    .colsCol--2 {
         padding-left: 105px;
-        
+
         &:before {
             display: none;
         }
     }
 }
 
-.cols--points-adv_img {
+.colsCol__imgPointsAdv {
     position: absolute;
     top: 32px;
 }
 
-.cols--points-adv_img--1 {
+.colsCol__imgPointsAdv--1 {
     left: 37px;
 }
 
-.cols--points-adv_img--2 {
+.colsCol__imgPointsAdv--2 {
     left: 36px;
 }
 
-.cols--points-adv_img--3 {
+.colsCol__imgPointsAdv--3 {
     left: 32px;
 }
 
-.cols--points-adv_img--4 {
+.colsCol__imgPointsAdv--4 {
     left: 33px;
 }
 
-.cols--points-adv_img--5 {
+.colsCol__imgPointsAdv--5 {
     left: 31px;
 }
 
-.cols--points-adv_img--6 {
+.colsCol__imgPointsAdv--6 {
     left: 32px;
 }
 
-.cols--points-adv_img--7 {
+.colsCol__imgPointsAdv--7 {
     left: 22px;
 }
 
-.cols--points-adv_img--8 {
+.colsCol__imgPointsAdv--8 {
     left: 32px;
 }
 
@@ -77,20 +77,20 @@
 
 /****************************** info window ******************************/
 .cashInfo {
-    
+
 }
 
-.cols--cashInfo {
+.cashInfoBlock {
     padding: 35px 40px 30px;
 }
 
-.cashInfo_img {
+.cashInfoBlock__img {
     float: left;
     max-width: 250px;
     margin-top: 10px;
 }
 
-.cashInfo_info {
+.cashInfoBlock__text {
     margin-left: 290px;
     font-size: 18px;
     line-height: 30px;
@@ -100,26 +100,26 @@
 
 /****************************** services ******************************/
 .services {
-    
+
 }
 
-.col--service {
+.colsCol--service {
     padding: 30px 20px 60px;
     text-align: center;
-    
-    .news_more {
+
+    .moreLink {
         bottom: 28px;
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
-.services_img {
+.colsCol__imgServices {
     margin-bottom: 15px;
     border-radius: 50%;
 }
 
-.services_info {
+.colsCol__infoServices {
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 22px;
@@ -128,8 +128,8 @@
 
 
 /****************************** management ******************************/
-.tabs--sub {
-    
+.tabsSub {
+
     .title {
         margin: 47px 0 27px;
         font-size: 26px;
@@ -137,20 +137,20 @@
     }
 }
 
-.tabsLinks--sub {
+.tabsSubLinks {
     margin: -20px;
     padding: 15px 25px;
     background: $blue;
     font-size: 0;
     line-height: 0;
-    
+
     li {
         margin-right: 5px;
         display: inline-block;
     }
 }
 
-.tabsLinks_link--sub {
+.tabsSubLinks__link {
     display: inline-block;
     padding: 5px 15px 7px;
     font-size: 14px;
@@ -158,7 +158,7 @@
     color: $white;
     background: transparent;
     border-radius: 20px;
-    
+
     &.is-active {
         background: #2c687c;
         color: #b5e2f1;
@@ -166,13 +166,13 @@
     }
 }
 
-.tabsWrapper--sub {
+.tabsSubWrapper {
     padding: 0 20px 23px;
 }
 
-.tabsContent--sub {
+.tabsContentSub {
     display: none;
-    
+
     &.is-active {
         display: block;
     }
@@ -182,7 +182,7 @@
     justify-content: space-between;
 }
 
-.col--manage {
+.colsCol--manage {
     position: relative;
     flex-basis: 24%;
     margin-right: 14%;
@@ -191,11 +191,11 @@
     font-size: 13px;
     line-height: 21px;
     border: 1px solid #dfdfdf;
-    
+
     &:nth-child(3n) {
         margin-right: 0;
     }
-    
+
     &:nth-last-child(1),
     &:nth-last-child(2),
     &:nth-last-child(3) {
@@ -203,8 +203,8 @@
     }
 }
 
-.col--manage1 {
-    
+.colsCol--manage1 {
+
     &:before {
         content: '';
         display: inline-block;
@@ -215,25 +215,25 @@
         top: 50%;
         right: -58%;
     }
-    
+
     &:after {
         content: '';
         display: inline-block;
-        border: 5px solid transparent;	
+        border: 5px solid transparent;
         border-left: 5px solid #dfdfdf;
         position: absolute;
         top: 50%;
         right: -58%;
         transform: translate(5px, -4.5px);
     }
-    
-    .col--manage_text {
+
+    .colsCol__textManage {
         margin-bottom: 43px;
     }
 }
 
-.col--manage2 {
-    
+.colsCol--manage2 {
+
     &:before {
         content: '';
         display: inline-block;
@@ -244,11 +244,11 @@
         top: 50%;
         right: -58%;
     }
-    
+
     &:after {
         content: '';
         display: inline-block;
-        border: 5px solid transparent;	
+        border: 5px solid transparent;
         border-left: 5px solid #dfdfdf;
         position: absolute;
         top: 50%;
@@ -257,9 +257,9 @@
     }
 }
 
-.col--manage3 {
-    
-    .col--manage_next {
+.colsCol--manage3 {
+
+    .colsCol__nextManage {
         top: auto;
         bottom: -40px;
         right: 50%;
@@ -267,9 +267,9 @@
     }
 }
 
-.col--manage4 {
+.colsCol--manage4 {
     padding: 0;
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -280,26 +280,26 @@
         top: 50%;
         right: -59%;
     }
-    
+
     &:after {
         content: '';
         display: inline-block;
-        border: 5px solid transparent;	
+        border: 5px solid transparent;
         border-right: 5px solid #dfdfdf;
         position: absolute;
         top: 50%;
         right: 0;
         transform: translate(9px, -4.5px);
     }
-    
+
     img {
         width: 100%;
         margin: 0;
     }
 }
 
-.col--manage5 {
-    
+.colsCol--manage5 {
+
     &:before {
         content: '';
         display: inline-block;
@@ -310,11 +310,11 @@
         top: -60px;
         left: 50%;
     }
-    
+
     &:after {
         content: '';
         display: inline-block;
-        border: 5px solid transparent;	
+        border: 5px solid transparent;
         border-top: 5px solid #dfdfdf;
         position: absolute;
         top: -10px;
@@ -323,8 +323,8 @@
     }
 }
 
-.col--manage6 {
-    
+.colsCol--manage6 {
+
     &:before {
         content: '';
         display: inline-block;
@@ -335,11 +335,11 @@
         top: -60px;
         left: 50%;
     }
-    
+
     &:after {
         content: '';
         display: inline-block;
-        border: 5px solid transparent;	
+        border: 5px solid transparent;
         border-top: 5px solid #dfdfdf;
         position: absolute;
         top: -10px;
@@ -348,15 +348,15 @@
     }
 }
 
-.col--manage_text {
-    
+.colsCol__textManage {
+
 }
 
-.col--manage_info {
+.colsCol__infoManage {
     color: $gray;
 }
 
-.col--manage_next {
+.colsCol__nextManage {
     position: absolute;
     top: 35%;
     right: -58%;
@@ -364,13 +364,13 @@
     text-align: center;
 }
 
-.col--manage_img {
+.colsCol__imgManage {
     display: block;
     max-width: 100%;
     margin-bottom: 18px;
 }
 
-.col--manage_title {
+.colsCol__titleManage {
     margin-bottom: 12px;
     font: 16px/21px $r-bold;
 }
@@ -379,39 +379,39 @@
 
 /****************************** your company ******************************/
 .company {
-    
+
 }
 
 .cols--company {
     background-color: transparent;
-    
-    .col--company {
+
+    .colsCol--company {
         border: 0;
     }
 }
 
 
 
-.col--companyList {
+.colsCol--companyList {
     padding: 0 40px;
     color: $white;
     background: $black url('../img/cash_company_bg.jpg') no-repeat center center;
     background-size: cover;
 }
 
-.col--company_list {
-    
+.companyList {
+
 }
 
-.col--company_list_item {
+.companyList__item {
     position: relative;
     padding: 31px 20px 34px 20px;
     border-bottom: 1px solid rgba(255,255,255, 0.3);
-    
+
     &:last-child {
         border: 0;
     }
-    
+
     &:before {
         content: '';
         display: inline-block;
@@ -426,38 +426,37 @@
 
 
 
-.col--companyInfo {
+.colsCol--companyInfo {
     position: relative;
     padding: 73px 40px 40px;
     background: linear-gradient(45deg,#e28b25 0,#e28b25 75%,#ea9531 75%,#ea9531 100%);
-    
+
     &:before {
         content: '';
         position: absolute;
         top: 0;
         right: 0;
-        border: 33px solid transparent;	
-        border-bottom: 33px solid #d67c12; 
+        border: 33px solid transparent;
+        border-bottom: 33px solid #d67c12;
         border-left: 33px solid #d67c12;
     }
-    
+
     &:after {
         content: '';
         position: absolute;
         top: 0;
         right: 0;
-        border: 33px solid transparent;	
-        border-top: 33px solid #eff1f2; 
+        border: 33px solid transparent;
+        border-top: 33px solid #eff1f2;
         border-right: 33px solid #eff1f2;
     }
 }
 
-.col--companyInfo_img {
+.colsCol__imgCompany {
     margin-bottom: 50px;
 }
 
-.col--companyInfo_text {
+.colsCol__infoCompany {
     font: 30px/40px $r-light;
     color: $white;
 }
-
