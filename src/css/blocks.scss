@@ -62,16 +62,16 @@
     }
 }
 
-.tabsContent_img {
+.tabsContent__img {
     width: 100%;
 }
 
-.tabsContent_info {
+.tabsContent__info {
     padding: 25px 20px 45px;
 
 }
 
-.tabsContent_list {
+.tabsContent__list {
     padding: 0 100px;
 
     li {
@@ -98,7 +98,7 @@
     }
 }
 
-.tabsContent_list_link {
+.colsCol__tabsListLink {
     position: relative;
     padding-right: 15px;
     color: $blue;
@@ -259,7 +259,7 @@
     width: 100%;
 }
 
-.news_title {
+.colsCol__titleNews {
     margin-bottom: 24px;
     font: 20px/24px $r-bold;
     text-transform: uppercase;
@@ -371,12 +371,12 @@
     }
 }
 
-.colsCol--2--pointsLeasing {
+.colsCol--pointsLeasing {
     position: relative;
     background: $blue;
 }
 
-.colsCol--2--pointsLeasing_logo {
+.colsCol__pointsLeasingLogo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -395,13 +395,13 @@
     }
 }
 
-.cols--certificate_img {
+.colsCol__imgCertificate {
     width: 100%;
     max-width: 260px;
     margin-bottom: 6px;
 }
 
-.cols--certificate_info {
+.colsCol__infoCertificate {
     font-size: 14px;
     line-height: 22px;
     color: $gray;
@@ -422,26 +422,26 @@
     }
 }
 
-.cols--advantages_imgWrapper {
+.imgWrapperAdv {
     margin-bottom: 28px;
     height: 110px;
     line-height: 110px;
 }
 
-.cols--advantages_imgWrapper__img {
+.imgWrapperAdv__img {
     vertical-align: middle;
 }
 
-.cols--advantages_title {
+.colsCol__titleAdv {
     margin-bottom: 17px;
     font: 18px/24px $r-medium;
 }
 
-.cols--advantages_title--more {
+.colsCol__titleAdv--more {
     color: $gray;
 }
 
-.cols--advantages_info {
+.colsCol__infoAdv {
     font-size: 14px;
     line-height: 22px;
 }
@@ -461,17 +461,17 @@
     }
 }
 
-.cols--clients_imgWrapper {
+.imgWrapperClients {
     margin-bottom: 15px;
     height: 230px;
     line-height: 230px;
 }
 
-.cols--clients_imgWrapper__img {
+.imgWrapperClients__img {
     vertical-align: middle;
 }
 
-.cols--clients_info {
+.colsCol__infoClients {
     font-size: 14px;
     line-height: 22px;
     color: $gray;

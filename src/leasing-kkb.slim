@@ -5,8 +5,8 @@ html
 		include src/partials/menu.slim
 		include src/partials/slider.slim
 
-		.contentIn--full.contentIn--mainWrapper.clearfix
-			.sidebar
+		.contentIn.contentIn--full.contentIn--mainWrapper.clearfix
+			.contentIn__sidebar.sidebar
 				ul.sidebar__menu.menuSidebar
 					li
 						a.menuSidebar__link href="#decision" Лизинговые решения для вашего бизнеса
@@ -23,10 +23,10 @@ html
 					li
 						a.menuSidebar__link.menuSidebar__link--button href="#request" отправить заявку
 
-			.content
-				.tabs#decision
-					.title.title--top Лизинговые решения для вашего бизнеса
-					ul.tabsLinks
+			.contentIn__content.content
+				.content__tabs.tabs#decision
+					.tabs__title.title.title--top Лизинговые решения для вашего бизнеса
+					ul.tabs__tabsLinks.tabsLinks
 						li
 							a.tabsLinks__link href="#tab1" Оборудование
 						li
@@ -44,147 +44,148 @@ html
 									a.tabsLinks__link.tabsLinks__link--hidden href="#tab6" Авиаперевозки
 								li
 									a.tabsLinks__link.tabsLinks__link--hidden href="#tab7" Курьерская доставка
-					.tabsWrapper
-						.tabsContent id="tab1"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+					.tabs__tabsWrapper.tabsWrapper
+						.tabsWrapper__tabsContent.tabsContent id="tab1"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее об оборудовании
-						.tabsContent id="tab2"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
+						.tabsWrapper__tabsContent.tabsContent id="tab2"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее о спецтехнике
-						.tabsContent.is-active id="tab3"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
+						.tabsWrapper__tabsContent.tabsContent.is-active id="tab3"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее о ж/д транспорте
-						.tabsContent id="tab4"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
+						.tabsWrapper__tabsContent.tabsContent id="tab4"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее об автотранспорте
-						.tabsContent id="tab5"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
+						.tabsWrapper__tabsContent.tabsContent id="tab5"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее о морских и речных судах
-						.tabsContent id="tab6"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
+						.tabsWrapper__tabsContent.tabsContent id="tab6"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее о ж/д транспорте
-						.tabsContent id="tab7"
-							img.tabsContent_img src="img/platform.jpg"
-							.tabsContent_info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
-							ul.cols.tabsContent_list
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
+						.tabsWrapper__tabsContent.tabsContent id="tab7"
+							img.tabsContent__img src="img/platform.jpg"
+							.tabsContent__info Компания Газпромбанк Лизинг является одним из лидеров рынка лизинга ж/д транспорта, что позволяет нам предлагать выгодные условия поставки, гибкий график платежей и минимальное удорожание предметов лизинга. Виды железнодорожного транспорта:
+							ul.tabsContent__list.cols
 								li.cols__col.colsCol.colsCol--2 Грузовые вагоны
 								li.cols__col.colsCol.colsCol--2 Нефтеналивные и бензиновые цистерны
 								li.cols__col.colsCol.colsCol--2 Пассажирские вагоны
 								li.cols__col.colsCol.colsCol--2 Полувагоны
 								li.cols__col.colsCol.colsCol--2 Прочий подвижной состав
 								li.cols__col.colsCol.colsCol--2
-									a.tabsContent_list_link href="#" Подробнее о ж/д транспорте
+									a.colsCol__tabsListLink href="#" Подробнее об оборудовании
 
-				.news#programs
-					.title Лизинговые программы
-					.cols.withShadow.cols--news
-						.colsCol--2.cols__col.colsCol.colsCol--news.is-link data-href="test1"
+
+				.content__news.news#programs
+					.news__title.title Лизинговые программы
+					.news__cols.cols.withShadow.cols--news
+						.cols__col.colsCol.colsCol--2.colsCol--news.is-link data-href="test1"
 							p.colsCol__imgWrapper.imgWrapper
 								img.imgWrapper__img src="img/news/news_1.jpg"
-							p.news_title Государственная программа "Лизинговые проекты"
+							p.colsCol__titleNews Государственная программа "Лизинговые проекты"
 							p.colsCol__newsInfo Газпромбанк Лизинг – уполномоченная лизинговая компания Фонда развития промышленности (ФРП) при Минпромторге РФ по реализации государственной программы «Лизинговые проекты» (Программа №5), которая направлена на поддержку технологического ...
-							a.colsCol__moreLink подробнее
-						.colsCol--2.cols__col.colsCol.colsCol--news.is-link data-href="test2"
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--2.colsCol--news.is-link data-href="test2"
 							p.colsCol__imgWrapper.imgWrapper
 								img.imgWrapper__img src="img/news/news_2.jpg"
-							p.news_title Государственная программа "Автопром"
+							p.colsCol__titleNews Государственная программа "Автопром"
 							p.colsCol__newsInfo Планируете обновить ваш парк коммерческого или грузового автотранспорта? Благодаря компании Газпромбанк Лизинг и государственной программе льготного лизинга «Автопром» вы можете сделать это на специальных условиях!
-							a.colsCol__moreLink подробнее
-						.colsCol--2.cols__col.colsCol.colsCol--news.is-link data-href="test3"
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--2.colsCol--news.is-link data-href="test3"
 							p.colsCol__imgWrapper.imgWrapper
 								img.imgWrapper__img src="img/news/news_3.jpg"
-							p.news_title Программа "Ключевой партнер"
+							p.colsCol__titleNews Программа "Ключевой партнер"
 							p.colsCol__newsInfo одна из ведущих компаний на рынке аренды РФ, одним из основных преимуществ которой является наличие парка современного мощного энергогенерирующего оборудования произведенного в течение прошлого года. Мы заинтересованы в долгосрочном партнерстве.
-							a.colsCol__moreLink подробнее
-						.colsCol--2.cols__col.colsCol.colsCol--news.is-link data-href="test4"
+							a.colsCol__moreLink.moreLink подробнее
+						.cols__col.colsCol.colsCol--2.colsCol--news.is-link data-href="test4"
 							p.colsCol__imgWrapper.imgWrapper
 								img.imgWrapper__img src="img/news/news_4.jpg"
-							p.news_title Реализация имущества
+							p.colsCol__titleNews Реализация имущества
 							p.colsCol__newsInfo Программа «Ключевой партнер» – это уникальная возможность приобрести оборудование ведущих производителей на специальных условиях. Для предприятий-производителей участие в программе – это прекрасная возможность увеличить реализацию...
-							a.colsCol__moreLink подробнее
+							a.colsCol__moreLink.moreLink подробнее
 
 				include src/partials/portrait.slim
 
-				.advantages#advantages
-					.title Ключевые преимущества
-					.cols.withShadow.cols--advantages
+				.content__advantages.advantages#advantages
+					.advantages__title.title Ключевые преимущества
+					.advantages__cols.cols.withShadow.cols--advantages
 						.cols__col.colsCol.colsCol--3
-							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper__img src="img/icons/advantage_1_orange.png"
-							.cols--advantages_title Надежность
-							.cols--advantages_info Высочайший уровень надежности подтвержден рейтинговым агентством «Эксперт РА»
+							.colsCol__imgWrapperAdv.imgWrapperAdv
+								img.imgWrapperAdv__img src="img/icons/advantage_1_orange.png"
+							.colsCol__titleAdv Надежность
+							.colsCol__infoAdv Высочайший уровень надежности подтвержден рейтинговым агентством «Эксперт РА»
 						.cols__col.colsCol.colsCol--3
-							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper__img src="img/icons/advantage_2_orange.png"
-							.cols--advantages_title Индивидуальный подход
-							.cols--advantages_info Максимальный учет специфики бизнеса клиента и персонализированные решения
+							.colsCol__imgWrapperAdv.imgWrapperAdv
+								img.imgWrapperAdv__img src="img/icons/advantage_2_orange.png"
+							.colsCol__titleAdv Индивидуальный подход
+							.colsCol__infoAdv Максимальный учет специфики бизнеса клиента и персонализированные решения
 						.cols__col.colsCol.colsCol--3
-							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper__img src="img/icons/advantage_3_orange.png"
-							.cols--advantages_title Профессионализм
-							.cols--advantages_info Высокая компетенция сотрудников и мировые стандарты качества обслуживания
+							.colsCol__imgWrapperAdv.imgWrapperAdv
+								img.imgWrapperAdv__img src="img/icons/advantage_3_orange.png"
+							.colsCol__titleAdv Профессионализм
+							.colsCol__infoAdv Высокая компетенция сотрудников и мировые стандарты качества обслуживания
 						.cols__col.colsCol.colsCol--3
-							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper__img src="img/icons/advantage_4_orange.png"
-							.cols--advantages_title Прозрачные условия
-							.cols--advantages_info Отсутствие скрытых комиссий и детальное описание обязательств перед клиентом
+							.colsCol__imgWrapperAdv.imgWrapperAdv
+								img.imgWrapperAdv__img src="img/icons/advantage_4_orange.png"
+							.colsCol__titleAdv Прозрачные условия
+							.colsCol__infoAdv Отсутствие скрытых комиссий и детальное описание обязательств перед клиентом
 						.cols__col.colsCol.colsCol--3
-							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper__img src="img/icons/advantage_5_orange.png"
-							.cols--advantages_title Территориальная доступность
-							.cols--advantages_info Обслуживание через региональную сеть Газпромбанка (более 500 точек продаж)
+							.colsCol__imgWrapperAdv.imgWrapperAdv
+								img.imgWrapperAdv__img src="img/icons/advantage_5_orange.png"
+							.colsCol__titleAdv Территориальная доступность
+							.colsCol__infoAdv Обслуживание через региональную сеть Газпромбанка (более 500 точек продаж)
 						.cols__col.colsCol.colsCol--3
-							.cols--advantages_imgWrapper
-								img.cols--advantages_imgWrapper__img src="img/icons/advantage_other_orange.png"
-							.cols--advantages_title.cols--advantages_title--more И другие преимущества
+							.colsCol__imgWrapperAdv.imgWrapperAdv
+								img.imgWrapperAdv__img src="img/icons/advantage_other_orange.png"
+							.colsCol__titleAdv.colsCol__titleAdv--more И другие преимущества
 
 				include src/partials/contacts.slim
 				include src/partials/clients.slim

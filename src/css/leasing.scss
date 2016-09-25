@@ -99,7 +99,7 @@
     padding: 39px 40px 40px;
 }
 
-.tabsContentCols_col {
+.colsCol--tabsContent {
     border-right: 1px solid #dfdfdf;
     
     &:nth-child(2n) {
@@ -107,7 +107,7 @@
     }
 }
 
-.tabsContent_about {
+.colsCol__tabsAbout {
     padding-right: 20%;
     font: 20px/30px $r-light;
     color: $gray;
@@ -120,7 +120,7 @@
     padding-left: 40px;
 }
 
-.tabsContentAddress_phone {
+.tabsContentAddress__phone {
     position: relative;
     display: inline-block;
     padding-left: 30px;
@@ -137,7 +137,7 @@
     }
 }
 
-.tabsContentAddress_mail {
+.tabsContentAddress__mail {
     position: relative;
     display: inline-block;
     float: right;
@@ -155,7 +155,7 @@
     }
 }
 
-.tabsContentAddress_address {
+.tabsContentAddress__address {
     position: relative;
     margin: 30px 0;
     float: none;
@@ -172,7 +172,7 @@
     }
 }
 
-.tabsContentAddress_time {
+.tabsContentAddress__time {
     position: relative;
     padding-left: 30px;
     font-size: 14px;
@@ -187,7 +187,7 @@
     }
 }
 
-.tabsContent_map {
+.tabsContent__map {
     
     img {
         display: block;
@@ -201,12 +201,12 @@
 .tabsContentAddress--line {
     padding: 33px 40px 34px;
     
-    .tabsContentAddress_mail {
+    .tabsContentAddress__mail {
         float: none;
         margin-left: 10%;
     }
     
-    .tabsContentAddress_address {
+    .tabsContentAddress__address {
         margin: 0;
     }
 }
