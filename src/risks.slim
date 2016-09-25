@@ -5,8 +5,8 @@ html
 		include src/partials/menu.slim
 		include src/partials/slider.slim
 
-		.contentIn--full.contentIn--mainWrapper.clearfix
-			.sidebar
+		.contentIn.contentIn--full.contentIn--mainWrapper.clearfix
+			.contentIn__sidebar.sidebar
 				ul.sidebar__menu.menuSidebar
 					li
 						a.menuSidebar__link href="#risksManagement" Управление рыночными рисками
@@ -25,198 +25,198 @@ html
 					li
 						a.menuSidebar__link.menuSidebar__link--button href="#request" отправить заявку
 
-			.content
-				.risksManagement#risksManagement
-					.title.title--top Управление рыночными рисками
-					.cols.withShadow.cols--riskManagement
-						.colsCol--2.cols__col.colsCol.col--riskManagement.col--riskManagementImg
-							.col--riskManagement_info Газпромбанк предоставляет корпоративным клиентам услуги по проведению операций хеджирования рыночных рисков
-							img.col--riskManagement_img src="img/logos/gasprombank_gray.png"
-						.colsCol--2.cols__col.colsCol.col--riskManagement
-							p.col--riskManagement_title Виды рыночного риска:
-							ul.col--riskManagement_list
-								li.col--riskManagement_list_item
+			.contentIn__content.content
+				.content__risksManagement.risksManagement#risksManagement
+					.risksManagement__title.title.title--top Управление рыночными рисками
+					.risksManagement__cols.cols.withShadow.cols--riskManagement
+						.cols__col.colsCol.colsCol--2.col--riskManagement.col--riskManagementImg
+							.colsCol__infoRiskManagement Газпромбанк предоставляет корпоративным клиентам услуги по проведению операций хеджирования рыночных рисков
+							img.colsCol__imgRiskManagement src="img/logos/gasprombank_gray.png"
+						.cols__col.colsCol.colsCol--2.col--riskManagement
+							p.colsCol__titleRiskManagement Виды рыночного риска:
+							ul.colsCol__listRiskManagement.listRiskManagement
+								li.listRiskManagement__item
 									| <b>Процентный риск</b> – изменение<br/>процентных ставок
-								li.col--riskManagement_list_item
+								li.listRiskManagement__item
 									| <b>Валютный риск</b> – изменение<br/>обменных курсов валют
-								li.col--riskManagement_list_item
+								li.listRiskManagement__item
 									| <b>Ценовой риск</b> – изменение цен<br/>на товарные активы
 
-				.risksType#risksType
-					.title Виды рыночного риска и инструменты хеджирования
-					.cols.withShadow
-						.cols__col.colsCol.colsCol--3.col--type
-							.col--type_header.col--typeHeader
-								.col--typeHeader_overlay
-								img.col--typeHeader_img src="img/risks_1.jpg"
-								span.col--typeHeader_info Валютный риск
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Примеры возникновения
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Валютные заимствования при отсутствии валютной выручки
-									li.col--typeBlock_list_item Импорт оборудования / сырья
-									li.col--typeBlock_list_item Реализация продукции экспортерами
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Основные валютные пары
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item USD/RUB
-									li.col--typeBlock_list_item EUR/RUB
-									li.col--typeBlock_list_item EUR/USD
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Инструменты хеджирования
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Форварды (фиксация курса конверсии на будущую дату)
-									li.col--typeBlock_list_item Опционы (ограничение риска и участие в благоприятном движении цен)
-									li.col--typeBlock_list_item Форварды со встроенными опционами
-						.cols__col.colsCol.colsCol--3.col--type
-							.col--type_header.col--typeHeader
-								.col--typeHeader_overlay
-								img.col--typeHeader_img src="img/risks_2.jpg"
-								span.col--typeHeader_info Процентный риск
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Примеры возникновения
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Заимствования по плавающей ставке в рублях или в валюте
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Процентные ставки
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Libor
-									li.col--typeBlock_list_item EurLibor
-									li.col--typeBlock_list_item MosPrime
-									li.col--typeBlock_list_item RUONIA
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Инструменты хеджирования
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Процентный своп (трансформация ставки из плавающей в фиксированную)
-									li.col--typeBlock_list_item Опцион на процентную ставку
-									li.col--typeBlock_list_item Комбинации процентных свопов и опционов
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title.col--typeBlock_title--special Дополнительно
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Кросс-валютные свопы
-						.cols__col.colsCol.colsCol--3.col--type
-							.col--type_header.col--typeHeader
-								.col--typeHeader_overlay
-								img.col--typeHeader_img src="img/risks_3.jpg"
-								span.col--typeHeader_info Ценовой риск
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Примеры возникновения
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Покупка / продажа сырья
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Основные товары хеджирования
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Драгметаллы (золото, серебро, платина, палладий)
-									li.col--typeBlock_list_item Металлы (алюминий, медь и т.д.)
-									li.col--typeBlock_list_item Нефть и нефтепродукты (Brent, Gasoil, Jet Aviation fuel и т.д.)
-									li.col--typeBlock_list_item Сельхозпродукты (пшеница, кукуруза, рапс и т.д.)
-							.col--type_block.col--typeBlock
-								.col--typeBlock_title Инструменты хеджирования
-								ul.col--typeBlock_list
-									li.col--typeBlock_list_item Товарный своп/форвард
-									li.col--typeBlock_list_item Товарные опционы и их комбинации
-									li.col--typeBlock_list_item Товарные свопы со встроенными опционами
+				.content__risksType.risksType#risksType
+					.risksType__title.title Виды рыночного риска и инструменты хеджирования
+					.risksType__cols.cols.withShadow
+						.cols__col.colsCol.colsCol--3.colsCol--type
+							.colsCol__typeHeader.typeHeader
+								.typeHeader__overlay
+								img.typeHeader__img src="img/risks_1.jpg"
+								span.typeHeader__info Валютный риск
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Примеры возникновения
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Валютные заимствования при отсутствии валютной выручки
+									li.typeBlockList__item Импорт оборудования / сырья
+									li.typeBlockList__item Реализация продукции экспортерами
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Основные валютные пары
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item USD/RUB
+									li.typeBlockList__item EUR/RUB
+									li.typeBlockList__item EUR/USD
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Инструменты хеджирования
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Форварды (фиксация курса конверсии на будущую дату)
+									li.typeBlockList__item Опционы (ограничение риска и участие в благоприятном движении цен)
+									li.typeBlockList__item Форварды со встроенными опционами
+						.cols__col.colsCol.colsCol--3.colsCol--type
+							.colsCol__typeHeader.typeHeader
+								.typeHeader__overlay
+								img.typeHeader__img src="img/risks_2.jpg"
+								span.typeHeader__info Процентный риск
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Примеры возникновения
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Заимствования по плавающей ставке в рублях или в валюте
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Процентные ставки
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Libor
+									li.typeBlockList__item EurLibor
+									li.typeBlockList__item MosPrime
+									li.typeBlockList__item RUONIA
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Инструменты хеджирования
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Процентный своп (трансформация ставки из плавающей в фиксированную)
+									li.typeBlockList__item Опцион на процентную ставку
+									li.typeBlockList__item Комбинации процентных свопов и опционов
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title.typeBlock__title--special Дополнительно
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Кросс-валютные свопы
+						.cols__col.colsCol.colsCol--3.colsCol--type
+							.colsCol__typeHeader.typeHeader
+								.typeHeader__overlay
+								img.typeHeader__img src="img/risks_3.jpg"
+								span.typeHeader__info Ценовой риск
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Примеры возникновения
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Покупка / продажа сырья
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Основные товары хеджирования
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Драгметаллы (золото, серебро, платина, палладий)
+									li.typeBlockList__item Металлы (алюминий, медь и т.д.)
+									li.typeBlockList__item Нефть и нефтепродукты (Brent, Gasoil, Jet Aviation fuel и т.д.)
+									li.typeBlockList__item Сельхозпродукты (пшеница, кукуруза, рапс и т.д.)
+							.colsCol__typeBlock.typeBlock
+								.typeBlock__title Инструменты хеджирования
+								ul.typeBlock__list.typeBlockList
+									li.typeBlockList__item Товарный своп/форвард
+									li.typeBlockList__item Товарные опционы и их комбинации
+									li.typeBlockList__item Товарные свопы со встроенными опционами
 
-				.attention
-					.attention_info
+				.content__attention.attention
+					.attention__info
 						| Газпромбанк готов предоставить комплексные решения в области управления финансовыми рисками и создать уникальные стратегии хеджирования
 
-				.additional#additional
-					.title Дополнительные возможности
-					.withShadow.cols--additional
-						.cashInfoBlock.clearfix
+				.content__additional.additional#additional
+					.additional__title.title Дополнительные возможности
+					.additional__colsWrapper.withShadow.colsAdditional
+						.colsAdditional__cashInfoBlock.cashInfoBlock.clearfix
 							img.cashInfoBlock__img src="img/sprout.jpg"
 							p.cashInfoBlock__text
 								| Помимо заключения сделок со стандартными инструментами хеджирования Банк предлагает корпоративным клиентам размещение средств в депозиты с повышенной доходностью.
-						.cols.cols--news
-							.colsCol--2.cols__col.colsCol.colsCol--news
+						.colsAdditional__cols.cols.cols--news
+							.cols__col.colsCol.colsCol--2.colsCol--news
 								p.imgWrapper
 									img.imgWrapper__img src="img/news/news_5.jpg"
 								p.colsCol__titleNews Бивалютный депозит
-								ul.news_list
-									.news_list_item
+								ul.colsCol__newsList.newsList
+									.newsList__item
 										| Депозитный вклад, предусматривающий право Банка на конвертацию основной суммы депозита и процентов по заранее оговоренному  курсу
-									.news_list_item
+									.newsList__item
 										| Процентная ставка по <b>Бивалютному депозиту</b> в большинстве случаев значительно превышает ставку аналогичного по сроку простого депозита
-									.news_list_item
+									.newsList__item
 										| Ставка по Бивалютному депозиту зависит от <b>срока, суммы, валютной пары и курса конверсии</b>
-							.colsCol--2.cols__col.colsCol.colsCol--news
+							.cols__col.colsCol.colsCol--2.colsCol--news
 								p.imgWrapper
 									img.imgWrapper__img src="img/news/news_6.jpg"
 								p.colsCol__titleNews Индексный депозит
 								p.colsCol__newsInfo Депозитный вклад, позволяющий получить повышенный доход за счет участия в движении выбранного индекса со 100% защитой капитала. В качестве «Индекса» может быть выбран любой актив по желанию клиента, например
-								ul.news_list
-									.news_list_item
+								ul.colsCol__newsList
+									.newsList__item
 										| Валютный курс (доллар к рублю, евро к рублю и т.п.)
-									.news_list_item
+									.newsList__item
 										| Акции или фондовые индексы
-									.news_list_item
+									.newsList__item
 										| Котировки биржевых товаров (нефть, золото, драгоценные и промышленные металлы, сельскохозяйственные товары и т.п.)
-									.news_list_item
+									.newsList__item
 										| Экономические индикаторы (инфляция, ставка рефинансирования ЦБ и т.п.)
 
-				.stages#stages
-					.title Этапы работы комплексного подхода
-					.withShadow
-						.cols.cols--steps
-							.col6.cols__col.colsCol.col--step
-								.col--step_item.col--step_item--start Шаг 1
-							.col6.cols__col.colsCol.col--step
-								.col--step_item Шаг 2
-							.col6.cols__col.colsCol.col--step
-								.col--step_item Шаг 3
-							.col6.cols__col.colsCol.col--step
-								.col--step_item Шаг 4
-							.col6.cols__col.colsCol.col--step
-								.col--step_item Шаг 5
-							.col6.cols__col.colsCol.col--step
-								.col--step_item.col--step_item--end Шаг 6
-						.cols.cols--steps
-							.col6.cols__col.colsCol.col--stepInfo
-								.col--stepInfo_text Анализ риска
-							.col6.cols__col.colsCol.col--stepInfo
-								.col--stepInfo_text Определение целевых показателей
-							.col6.cols__col.colsCol.col--stepInfo
-								.col--stepInfo_text Разработка и утверждение политики
-							.col6.cols__col.colsCol.col--stepInfo
-								.col--stepInfo_text Выбор наиболее подходящей стратегии
-							.col6.cols__col.colsCol.col--stepInfo
-								.col--stepInfo_text Реализация стратегии хеджирования
-							.col6.cols__col.colsCol.col--stepInfo
-								.col--stepInfo_text Анализ результатов
+				.content__stages.stages#stages
+					.stages__title.title Этапы работы комплексного подхода
+					.stages__wrapper.withShadow.colsStagesWrapper
+						.colsStagesWrapper__cols.cols.cols--steps
+							.cols__col.colsCol.colsCol--6.colsCol--step
+								.colsCol__stepItem.colsCol__stepItem--start Шаг 1
+							.cols__col.colsCol.colsCol--6.colsCol--step
+								.colsCol__stepItem Шаг 2
+							.cols__col.colsCol.colsCol--6.colsCol--step
+								.colsCol__stepItem Шаг 3
+							.cols__col.colsCol.colsCol--6.colsCol--step
+								.colsCol__stepItem Шаг 4
+							.cols__col.colsCol.colsCol--6.colsCol--step
+								.colsCol__stepItem Шаг 5
+							.cols__col.colsCol.colsCol--6.colsCol--step
+								.colsCol__stepItem.colsCol__stepItem--end Шаг 6
+						.colsStagesWrapper__cols.cols.cols--steps
+							.cols__col.colsCol.colsCol--6.colsCol--stepInfo
+								.colsCol__stepInfoText Анализ риска
+							.cols__col.colsCol.colsCol--6.colsCol--stepInfo
+								.colsCol__stepInfoText Определение целевых показателей
+							.cols__col.colsCol.colsCol--6.colsCol--stepInfo
+								.colsCol__stepInfoText Разработка и утверждение политики
+							.cols__col.colsCol.colsCol--6.colsCol--stepInfo
+								.colsCol__stepInfoText Выбор наиболее подходящей стратегии
+							.cols__col.colsCol.colsCol--6.colsCol--stepInfo
+								.colsCol__stepInfoText Реализация стратегии хеджирования
+							.cols__col.colsCol.colsCol--6.colsCol--stepInfo
+								.colsCol__stepInfoText Анализ результатов
 
-				.keyAdvantages#keyAdvantages
-					.title Ключевые преимущества
-					.cols.withShadow.cols--key
-						.cols__col.colsCol.colsCol--3.col--key
-							.col--key_imgWrapper
-								img.col--key_imgWrapper__img src="img/icons/advantge_risks_1.png"
-							p.col--key_title
+				.content__keyAdvantages.keyAdvantages#keyAdvantages
+					.keyAdvantages__title.title Ключевые преимущества
+					.keyAdvantages__cols.cols.withShadow.cols--key
+						.cols__col.colsCol.colsCol--3.colsCol--key
+							.colsCol__keyImgWrapper.keyImgWrapper
+								img.keyImgWrapper__img src="img/icons/advantge_risks_1.png"
+							p.colsCol__titleKey
 								| Минимизация<br/>рыночных<br/>рисков
-							ul.col--key_list
-								li.col--key_list_item Снижение зависимости Компании от внешних факторов
-								li.col--key_list_item Снижение вероятности непроизводственных убытков
-						.cols__col.colsCol.colsCol--3.col--key
-							.col--key_imgWrapper
-								img.col--key_imgWrapper__img src="img/icons/advantge_risks_2.png"
-							p.col--key_title
+							ul.colsCol__listKey.listKey
+								li.listKey__item Снижение зависимости Компании от внешних факторов
+								li.listKey__item Снижение вероятности непроизводственных убытков
+						.cols__col.colsCol.colsCol--3.colsCol--key
+							.colsCol__keyImgWrapper.keyImgWrapper
+								img.keyImgWrapper__img src="img/icons/advantge_risks_2.png"
+							p.colsCol__titleKey
 								| Стабилизация<br/>денежных<br/>потоков
-							ul.col--key_list
-								li.col--key_list_item Формирование бюджета без учета рыночного фактора
-								li.col--key_list_item Повышение точности как стратегического, так и тактического планирования денежных потоков
-						.cols__col.colsCol.colsCol--3.col--key
-							.col--key_imgWrapper
-								img.col--key_imgWrapper__img src="img/icons/advantge_risks_3.png"
-							p.col--key_title
+							ul.colsCol__listKey.listKey
+								li.listKey__item Формирование бюджета без учета рыночного фактора
+								li.listKey__item Повышение точности как стратегического, так и тактического планирования денежных потоков
+						.cols__col.colsCol.colsCol--3.colsCol--key
+							.colsCol__keyImgWrapper.keyImgWrapper
+								img.keyImgWrapper__img src="img/icons/advantge_risks_3.png"
+							p.colsCol__titleKey
 								| Получение<br/>конкурентных<br/>преимуществ
-							ul.col--key_list
-								li.col--key_list_item Увеличение инвестиционной привлекательности и кредитоспособности Компании
-								li.col--key_list_item Расширение вариантов привлечение финансирования
-								li.col--key_list_item Гибкость ценообразования экспорта / импорта
+							ul.colsCol__listKey.listKey
+								li.listKey__item Увеличение инвестиционной привлекательности и кредитоспособности Компании
+								li.listKey__item Расширение вариантов привлечение финансирования
+								li.listKey__item Гибкость ценообразования экспорта / импорта
 
-				.how#how
-					.title Как это работает?
-					.cols.withShadow.cols--procedure.cols--procedureHow
+				.content__how.how#how
+					.how__title.title Как это работает?
+					.how__cols.cols.withShadow.cols--procedure.cols--procedureHow
 						.cols__col.colsCol.colsCol--3.colsCol--procedure
 							p.colsCol__procedureImgWrapper.procedureImgWrapper
 								img src="img/icons/procedure_4.png"
@@ -233,41 +233,41 @@ html
 							p.colsCol__infoProcedure
 								| Заключить сделку при согласии с условиями
 
-				.contacts#contacts
-					.title Контакты
-					.cols.withShadow
-						.cols__col.colsCol.colsCol--3.col--contacts
-							img.contacts_avatar src="img/persons/vinsky.jpg"
-							p.contacts_name Антон Винский
-							p.contacts_position Заместитель начальника
-							p.contacts_place Департамент казначейских операций
-							p.contacts_phone
-								a.contacts_phone_link href="tel:+74954284627"
+				.content__contacts.contacts#contacts
+					.contacts__title.title Контакты
+					.contacts__cols.cols.withShadow
+						.cols__col.colsCol.colsCol--3.colsCol--contacts
+							img.colsCol__contactsAvatar src="img/persons/vinsky.jpg"
+							p.colsCol__contactsName Антон Винский
+							p.colsCol__contactsPosition Заместитель начальника
+							p.colsCol__contactsPlace Департамент казначейских операций
+							p.colsCol__contactsPhone.contactsPhone
+								a.contactsPhone__link href="tel:+74954284627"
 									| + 7 (495) 428-46-27
-							p.contacts_email
-								a.contacts_email_link href="mailto:Anton.Vinsky@Gazprombank.ru"
+							p.colsCol__contactsEmail.contactsEmail
+								a.contactsEmail__link href="mailto:Anton.Vinsky@Gazprombank.ru"
 									| Anton.Vinsky@Gazprombank.ru
-						.cols__col.colsCol.colsCol--3.col--contacts
-							img.contacts_avatar src="img/persons/chekmarev.jpg"
-							p.contacts_name Кирилл Чекмарев
-							p.contacts_position Директор
-							p.contacts_place Департамент казначейских операций
-							p.contacts_phone
-								a.contacts_phone_link href="tel:+74959804332"
+						.cols__col.colsCol.colsCol--3.colsCol--contacts
+							img.colsCol__contactsAvatar src="img/persons/chekmarev.jpg"
+							p.colsCol__contactsName Кирилл Чекмарев
+							p.colsCol__contactsPosition Директор
+							p.colsCol__contactsPlace Департамент казначейских операций
+							p.colsCol__contactsPhone.contactsPhone
+								a.contactsPhone__link href="tel:+74959804332"
 									| + 7 (495) 980-43-32
-							p.contacts_email
-								a.contacts_email_link href="mailto:Kirill.Chekmarev@Gazprombank.ru"
+							p.colsCol__contactsEmail.contactsEmail
+								a.contactsEmail__link href="mailto:Kirill.Chekmarev@Gazprombank.ru"
 									| Kirill.Chekmarev@Gazprombank.ru
-						.cols__col.colsCol.colsCol--3.col--contacts
-							img.contacts_avatar src="img/persons/eltsov.jpg"
-							p.contacts_name Юрий Ельцов
-							p.contacts_position Заместитель директора
-							p.contacts_place Департамент казначейских операций
-							p.contacts_phone
-								a.contacts_phone_link href="tel:+74959804190"
+						.cols__col.colsCol.colsCol--3.colsCol--contacts
+							img.colsCol__contactsAvatar src="img/persons/eltsov.jpg"
+							p.colsCol__contactsName Юрий Ельцов
+							p.colsCol__contactsPosition Заместитель директора
+							p.colsCol__contactsPlace Департамент казначейских операций
+							p.colsCol__contactsPhone.contactsPhone
+								a.contactsPhone__link href="tel:+74959804190"
 									| + 7 (495) 980-41-90
-							p.contacts_email
-								a.contacts_email_link href="mailto:Yury.Eltsov@Gazprombank.ru"
+							p.colsCol__contactsEmail.contactsEmail
+								a.contactsEmail__link href="mailto:Yury.Eltsov@Gazprombank.ru"
 									| Yury.Eltsov@Gazprombank.ru
 
 				include src/partials/request.slim

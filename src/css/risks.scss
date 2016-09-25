@@ -18,28 +18,28 @@
     padding-bottom: 60px;
 }
 
-.col--riskManagement_info {
+.colsCol__infoRiskManagement {
     margin-bottom: 20px;
     font: 24px/34px $r-light;
     color: $gray;
 }
 
-.col--riskManagement_img {
+.colsCol__imgRiskManagement {
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-.col--riskManagement_title {
+.colsCol__titleRiskManagement {
     margin-bottom: 10px;
     font: 18px/34px $r-medium;
 }
 
-.col--riskManagement_list {
+.listRiskManagement {
     counter-reset: list;
 }
 
-.col--riskManagement_list_item {
+.listRiskManagement__item {
     position: relative;
     padding: 21px 20px 20px 60px;
     border-bottom: 1px solid #dfdfdf;
@@ -78,17 +78,17 @@
 
 }
 
-.col--type {
+.colsCol--type {
     padding: 20px 20px 10px;
 }
 
 
 
-.col--typeHeader {
+.typeHeader {
     position: relative;
 }
 
-.col--typeHeader_overlay {
+.typeHeader__overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -98,12 +98,12 @@
     opacity: 0.5;
 }
 
-.col--typeHeader_img {
+.typeHeader__img {
     display: block;
     width: 100%;
 }
 
-.col--typeHeader_info {
+.typeHeader__info {
     display: inline-block;
     padding: 0 15px;
     position: absolute;
@@ -119,7 +119,7 @@
 
 
 
-.col--typeBlock {
+.typeBlock {
     padding: 21px 0 24px;
     border-bottom: 1px solid #dfdfdf;
 
@@ -128,20 +128,20 @@
     }
 }
 
-.col--typeBlock_title {
+.typeBlock__title {
     margin-bottom: 22px;
     font: 18px/24px $r-medium;
 }
 
-.col--typeBlock_title--special {
+.typeBlock__title--special {
     color: $blue;
 }
 
-.col--typeBlock_list {
+.typeBlock__list {
 
 }
 
-.col--typeBlock_list_item {
+.typeBlockList__item {
     position: relative;
     margin-bottom: 12px;
     padding-left: 20px;
@@ -171,7 +171,7 @@
     margin-top: 40px;
 }
 
-.attention_info {
+.attention__info {
     position: relative;
     padding: 20px 10px 24px 115px;
     font-size: 18px;
@@ -192,7 +192,7 @@
 
 
 /****************************** additional opportunities ******************************/
-.cols--additional {
+.colsAdditional {
 
     .cashInfoBlock {
         padding: 15px 40px 10px;
@@ -219,11 +219,11 @@
     flex-wrap: nowrap;
 }
 
-.col--step {
+.colsCol--step {
 
 }
 
-.col--step_item {
+.colsCol__stepItem {
     position: relative;
     padding-left: 40px;
     height: 50px;
@@ -253,7 +253,7 @@
     }
 }
 
-.col--step_item--start {
+.colsCol__stepItem--start {
     background: $blue;
 
     &:before {
@@ -261,7 +261,7 @@
     }
 }
 
-.col--step_item--end {
+.colsCol__stepItem--end {
     background: $orange;
 
     &:before,
@@ -270,7 +270,7 @@
     }
 }
 
-.col--stepInfo {
+.colsCol--stepInfo {
     padding: 17px 20px 34px;
     border-right: 1px solid #dfdfdf;
 
@@ -279,7 +279,7 @@
     }
 }
 
-.col--stepInfo_text {
+.colsCol__stepInfoText {
     font-size: 14px;
     line-height: 22px;
 }
@@ -295,11 +295,11 @@
     flex-wrap: nowrap;
 }
 
-.col--key {
+.colsCol--key {
     padding: 0 20px 32px;
 }
 
-.col--key_imgWrapper {
+.keyImgWrapper {
     float: left;
     width: 90px;
     height: 150px;
@@ -308,22 +308,22 @@
     text-align: center;
 }
 
-.col--key_imgWrapper__img {
+.keyImgWrapper__img {
     vertical-align: middle;
 }
 
-.col--key_title {
+.colsCol__titleKey {
     margin-top: 41px;
     margin-left: 110px;
     font: 18px/24px $r-medium;
 }
 
-.col--key_list {
+.listKey {
     float: none;
     clear: both;
 }
 
-.col--key_list_item {
+.listKey__item {
     position: relative;
     margin-bottom: 12px;
     padding-left: 20px;
@@ -378,17 +378,17 @@
     }
 }
 
-.col--contacts {
+.colsCol--contacts {
     padding: 30px 20px 34px;
     text-align: center;
 }
 
-.contacts_avatar {
+.colsCol__contactsAvatar {
     margin-bottom: 18px;
     border-radius: 50%;
 }
 
-.contacts_name {
+.colsCol__contactsName {
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 19px;
@@ -408,32 +408,32 @@
     }
 }
 
-.contacts_position {
+.colsCol__contactsPosition {
     font-size: 14px;
     line-height: 22px;
 }
 
-.contacts_place {
+.colsCol__contactsPlace {
     margin-bottom: 28px;
     font-size: 14px;
     line-height: 22px;
     color: $gray;
 }
 
-.contacts_phone {
+.contactsPhone {
     margin-bottom: 10px;
 }
 
-.contacts_phone_link {
+.contactsPhone__link {
     font: 16px/22px $r-bold;
     color: $black;
 }
 
-.contacts_email {
+.contactsEmail {
 
 }
 
-.contacts_email_link {
+.contactsEmail__link {
     font: 16px/22px $r-bold;
     color: $blue;
 }
